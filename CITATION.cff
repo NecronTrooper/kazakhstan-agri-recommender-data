@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Если вы используете этот пайплайн сбора данных или собранный датасет, пожалуйста, цитируйте его следующим образом."
+title: "Kazakhstan Agri Recommender — Data Collection Pipeline"
+type: dataset
+version: 1.0.0
+date-released: "2026-09-10"
+authors:
+  - family-names: "Kumarov"
+    given-names: "Akezhan"
+    # affiliation: "УКАЗАТЬ ВУЗ" — заполнить при наличии
+    # orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX" — заполнить при наличии
+repository-code: "https://github.com/NecronTrooper/kazakhstan-agri-recommender-data"
+abstract: >
+  Пайплайн сбора данных для рекомендательной системы аграриям Казахстана:
+  производство сельхозкультур (FAOSTAT, stat.gov.kz — областной и
+  районный уровень), климат (ERA5-Land), почва (SoilGrids v2.0), мировые
+  цены (World Bank Pink Sheet) и внутренние цены зернового рынка
+  Казахстана (grainunion.kz), с независимой кросс-валидацией между
+  источниками.
+keywords:
+  - agriculture
+  - Kazakhstan
+  - crop yield
+  - remote sensing
+  - commodity prices
+  - recommender system
+  - data descriptor
+license:
+  - MIT
+  - CC-BY-4.0
