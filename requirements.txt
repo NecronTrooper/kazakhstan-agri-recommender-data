@@ -1,0 +1,8 @@
+requests
+pandas
+numpy
+openpyxl
+xlrd
+cdsapi
+xarray
+scipy

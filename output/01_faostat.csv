@@ -1,0 +1,467 @@
+﻿year,crop,indicator,value,unit,flag,country,source
+1992,Barley,Area harvested (ha),5627400.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1993,Barley,Area harvested (ha),6884600.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1994,Barley,Area harvested (ha),5649700.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1995,Barley,Area harvested (ha),3933700.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1996,Barley,Area harvested (ha),3280700.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1997,Barley,Area harvested (ha),2762100.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1998,Barley,Area harvested (ha),1767200.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1999,Barley,Area harvested (ha),1700700.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2000,Barley,Area harvested (ha),1625200.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2001,Barley,Area harvested (ha),1711500.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2002,Barley,Area harvested (ha),1736800.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2003,Barley,Area harvested (ha),1886900.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2004,Barley,Area harvested (ha),1642300.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2005,Barley,Area harvested (ha),1450600.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2006,Barley,Area harvested (ha),1671300.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2007,Barley,Area harvested (ha),1837800.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2008,Barley,Area harvested (ha),1966700.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2009,Barley,Area harvested (ha),1709300.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2010,Barley,Area harvested (ha),1332800.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2011,Barley,Area harvested (ha),1515337.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2012,Barley,Area harvested (ha),1634011.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2013,Barley,Area harvested (ha),1836666.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2014,Barley,Area harvested (ha),1909356.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2015,Barley,Area harvested (ha),2037246.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2016,Barley,Area harvested (ha),1894068.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2017,Barley,Area harvested (ha),2068766.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2018,Barley,Area harvested (ha),2516952.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2019,Barley,Area harvested (ha),2976843.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2020,Barley,Area harvested (ha),2728822.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2021,Barley,Area harvested (ha),2157478.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2022,Barley,Area harvested (ha),2187297.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2023,Barley,Area harvested (ha),2424652.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2024,Barley,Area harvested (ha),2283246.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1992,Barley,Production (t),8510800.0,t,A,Kazakhstan,FAOSTAT_QCL
+1993,Barley,Production (t),7148500.0,t,A,Kazakhstan,FAOSTAT_QCL
+1994,Barley,Production (t),5496900.0,t,A,Kazakhstan,FAOSTAT_QCL
+1995,Barley,Production (t),2208100.0,t,A,Kazakhstan,FAOSTAT_QCL
+1996,Barley,Production (t),2695800.0,t,A,Kazakhstan,FAOSTAT_QCL
+1997,Barley,Production (t),2583000.0,t,A,Kazakhstan,FAOSTAT_QCL
+1998,Barley,Production (t),1093280.0,t,A,Kazakhstan,FAOSTAT_QCL
+1999,Barley,Production (t),2264900.0,t,A,Kazakhstan,FAOSTAT_QCL
+2000,Barley,Production (t),1663650.0,t,A,Kazakhstan,FAOSTAT_QCL
+2001,Barley,Production (t),2243770.0,t,A,Kazakhstan,FAOSTAT_QCL
+2002,Barley,Production (t),2208920.0,t,A,Kazakhstan,FAOSTAT_QCL
+2003,Barley,Production (t),2153930.0,t,A,Kazakhstan,FAOSTAT_QCL
+2004,Barley,Production (t),1387930.0,t,A,Kazakhstan,FAOSTAT_QCL
+2005,Barley,Production (t),1527500.0,t,A,Kazakhstan,FAOSTAT_QCL
+2006,Barley,Production (t),1952880.0,t,A,Kazakhstan,FAOSTAT_QCL
+2007,Barley,Production (t),2441190.0,t,A,Kazakhstan,FAOSTAT_QCL
+2008,Barley,Production (t),2058550.0,t,A,Kazakhstan,FAOSTAT_QCL
+2009,Barley,Production (t),2518610.0,t,A,Kazakhstan,FAOSTAT_QCL
+2010,Barley,Production (t),1312810.0,t,A,Kazakhstan,FAOSTAT_QCL
+2011,Barley,Production (t),2593109.1,t,A,Kazakhstan,FAOSTAT_QCL
+2012,Barley,Production (t),1490695.8,t,A,Kazakhstan,FAOSTAT_QCL
+2013,Barley,Production (t),2539034.0,t,A,Kazakhstan,FAOSTAT_QCL
+2014,Barley,Production (t),2411817.0,t,A,Kazakhstan,FAOSTAT_QCL
+2015,Barley,Production (t),2675174.0,t,A,Kazakhstan,FAOSTAT_QCL
+2016,Barley,Production (t),3231268.0,t,A,Kazakhstan,FAOSTAT_QCL
+2017,Barley,Production (t),3305224.0,t,A,Kazakhstan,FAOSTAT_QCL
+2018,Barley,Production (t),3971266.21,t,A,Kazakhstan,FAOSTAT_QCL
+2019,Barley,Production (t),3830069.25,t,A,Kazakhstan,FAOSTAT_QCL
+2020,Barley,Production (t),3659259.76,t,A,Kazakhstan,FAOSTAT_QCL
+2021,Barley,Production (t),2366804.99,t,A,Kazakhstan,FAOSTAT_QCL
+2022,Barley,Production (t),3287240.48,t,A,Kazakhstan,FAOSTAT_QCL
+2023,Barley,Production (t),2613882.0,t,A,Kazakhstan,FAOSTAT_QCL
+2024,Barley,Production (t),3839683.88,t,A,Kazakhstan,FAOSTAT_QCL
+1992,Maize (corn),Area harvested (ha),117800.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1993,Maize (corn),Area harvested (ha),108700.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1994,Maize (corn),Area harvested (ha),104300.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1995,Maize (corn),Area harvested (ha),70200.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1996,Maize (corn),Area harvested (ha),72700.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1997,Maize (corn),Area harvested (ha),61320.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1998,Maize (corn),Area harvested (ha),62300.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1999,Maize (corn),Area harvested (ha),65500.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2000,Maize (corn),Area harvested (ha),74600.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2001,Maize (corn),Area harvested (ha),86300.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2002,Maize (corn),Area harvested (ha),105200.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2003,Maize (corn),Area harvested (ha),101200.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2004,Maize (corn),Area harvested (ha),102700.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2005,Maize (corn),Area harvested (ha),104000.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2006,Maize (corn),Area harvested (ha),89300.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2007,Maize (corn),Area harvested (ha),92300.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2008,Maize (corn),Area harvested (ha),95400.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2009,Maize (corn),Area harvested (ha),99200.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2010,Maize (corn),Area harvested (ha),95600.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2011,Maize (corn),Area harvested (ha),96654.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2012,Maize (corn),Area harvested (ha),100320.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2013,Maize (corn),Area harvested (ha),107857.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2014,Maize (corn),Area harvested (ha),125710.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2015,Maize (corn),Area harvested (ha),137737.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2016,Maize (corn),Area harvested (ha),135116.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2017,Maize (corn),Area harvested (ha),136677.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2018,Maize (corn),Area harvested (ha),150062.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2019,Maize (corn),Area harvested (ha),156280.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2020,Maize (corn),Area harvested (ha),162812.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2021,Maize (corn),Area harvested (ha),188703.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2022,Maize (corn),Area harvested (ha),189271.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2023,Maize (corn),Area harvested (ha),190376.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2024,Maize (corn),Area harvested (ha),162165.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1992,Maize (corn),Production (t),367700.0,t,A,Kazakhstan,FAOSTAT_QCL
+1993,Maize (corn),Production (t),355200.0,t,A,Kazakhstan,FAOSTAT_QCL
+1994,Maize (corn),Production (t),233500.0,t,A,Kazakhstan,FAOSTAT_QCL
+1995,Maize (corn),Production (t),135600.0,t,A,Kazakhstan,FAOSTAT_QCL
+1996,Maize (corn),Production (t),122100.0,t,A,Kazakhstan,FAOSTAT_QCL
+1997,Maize (corn),Production (t),111210.0,t,A,Kazakhstan,FAOSTAT_QCL
+1998,Maize (corn),Production (t),166840.0,t,A,Kazakhstan,FAOSTAT_QCL
+1999,Maize (corn),Production (t),197600.0,t,A,Kazakhstan,FAOSTAT_QCL
+2000,Maize (corn),Production (t),248790.0,t,A,Kazakhstan,FAOSTAT_QCL
+2001,Maize (corn),Production (t),320390.0,t,A,Kazakhstan,FAOSTAT_QCL
+2002,Maize (corn),Production (t),435210.0,t,A,Kazakhstan,FAOSTAT_QCL
+2003,Maize (corn),Production (t),437550.0,t,A,Kazakhstan,FAOSTAT_QCL
+2004,Maize (corn),Production (t),457790.0,t,A,Kazakhstan,FAOSTAT_QCL
+2005,Maize (corn),Production (t),432080.0,t,A,Kazakhstan,FAOSTAT_QCL
+2006,Maize (corn),Production (t),413610.0,t,A,Kazakhstan,FAOSTAT_QCL
+2007,Maize (corn),Production (t),421220.0,t,A,Kazakhstan,FAOSTAT_QCL
+2008,Maize (corn),Production (t),420160.0,t,A,Kazakhstan,FAOSTAT_QCL
+2009,Maize (corn),Production (t),471200.0,t,A,Kazakhstan,FAOSTAT_QCL
+2010,Maize (corn),Production (t),462040.0,t,A,Kazakhstan,FAOSTAT_QCL
+2011,Maize (corn),Production (t),481960.0,t,A,Kazakhstan,FAOSTAT_QCL
+2012,Maize (corn),Production (t),520430.0,t,A,Kazakhstan,FAOSTAT_QCL
+2013,Maize (corn),Production (t),569262.2,t,A,Kazakhstan,FAOSTAT_QCL
+2014,Maize (corn),Production (t),663994.0,t,A,Kazakhstan,FAOSTAT_QCL
+2015,Maize (corn),Production (t),734092.63,t,A,Kazakhstan,FAOSTAT_QCL
+2016,Maize (corn),Production (t),762360.0,t,A,Kazakhstan,FAOSTAT_QCL
+2017,Maize (corn),Production (t),784695.0,t,A,Kazakhstan,FAOSTAT_QCL
+2018,Maize (corn),Production (t),862094.0,t,A,Kazakhstan,FAOSTAT_QCL
+2019,Maize (corn),Production (t),895978.15,t,A,Kazakhstan,FAOSTAT_QCL
+2020,Maize (corn),Production (t),958106.45,t,A,Kazakhstan,FAOSTAT_QCL
+2021,Maize (corn),Production (t),1129508.48,t,A,Kazakhstan,FAOSTAT_QCL
+2022,Maize (corn),Production (t),1098041.37,t,A,Kazakhstan,FAOSTAT_QCL
+2023,Maize (corn),Production (t),1189083.0,t,A,Kazakhstan,FAOSTAT_QCL
+2024,Maize (corn),Production (t),1005167.21,t,A,Kazakhstan,FAOSTAT_QCL
+1992,Rapeseed,Area harvested (ha),66500.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1993,Rapeseed,Area harvested (ha),43500.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1994,Rapeseed,Area harvested (ha),39400.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1995,Rapeseed,Area harvested (ha),45800.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1996,Rapeseed,Area harvested (ha),18200.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1997,Rapeseed,Area harvested (ha),10810.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1998,Rapeseed,Area harvested (ha),16200.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1999,Rapeseed,Area harvested (ha),16700.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2000,Rapeseed,Area harvested (ha),7500.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2001,Rapeseed,Area harvested (ha),10000.0,ha,X,Kazakhstan,FAOSTAT_QCL
+2002,Rapeseed,Area harvested (ha),2956.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2003,Rapeseed,Area harvested (ha),9600.0,ha,X,Kazakhstan,FAOSTAT_QCL
+2004,Rapeseed,Area harvested (ha),7000.0,ha,X,Kazakhstan,FAOSTAT_QCL
+2005,Rapeseed,Area harvested (ha),40000.0,ha,X,Kazakhstan,FAOSTAT_QCL
+2006,Rapeseed,Area harvested (ha),111700.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2007,Rapeseed,Area harvested (ha),160700.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2008,Rapeseed,Area harvested (ha),152800.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2009,Rapeseed,Area harvested (ha),180800.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2010,Rapeseed,Area harvested (ha),304600.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2011,Rapeseed,Area harvested (ha),154576.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2012,Rapeseed,Area harvested (ha),203124.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2013,Rapeseed,Area harvested (ha),254342.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2014,Rapeseed,Area harvested (ha),243363.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2015,Rapeseed,Area harvested (ha),220621.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2016,Rapeseed,Area harvested (ha),161104.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2017,Rapeseed,Area harvested (ha),251092.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2018,Rapeseed,Area harvested (ha),365408.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2019,Rapeseed,Area harvested (ha),269093.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2020,Rapeseed,Area harvested (ha),124154.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2021,Rapeseed,Area harvested (ha),118115.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2022,Rapeseed,Area harvested (ha),133278.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2023,Rapeseed,Area harvested (ha),92643.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2024,Rapeseed,Area harvested (ha),149215.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1992,Rapeseed,Production (t),54140.0,t,A,Kazakhstan,FAOSTAT_QCL
+1993,Rapeseed,Production (t),16300.0,t,A,Kazakhstan,FAOSTAT_QCL
+1994,Rapeseed,Production (t),22400.0,t,A,Kazakhstan,FAOSTAT_QCL
+1995,Rapeseed,Production (t),10100.0,t,A,Kazakhstan,FAOSTAT_QCL
+1996,Rapeseed,Production (t),3683.0,t,A,Kazakhstan,FAOSTAT_QCL
+1997,Rapeseed,Production (t),5037.0,t,A,Kazakhstan,FAOSTAT_QCL
+1998,Rapeseed,Production (t),3528.0,t,A,Kazakhstan,FAOSTAT_QCL
+1999,Rapeseed,Production (t),11500.0,t,A,Kazakhstan,FAOSTAT_QCL
+2000,Rapeseed,Production (t),2940.0,t,A,Kazakhstan,FAOSTAT_QCL
+2001,Rapeseed,Production (t),5000.0,t,A,Kazakhstan,FAOSTAT_QCL
+2002,Rapeseed,Production (t),2105.0,t,A,Kazakhstan,FAOSTAT_QCL
+2003,Rapeseed,Production (t),7335.0,t,A,Kazakhstan,FAOSTAT_QCL
+2004,Rapeseed,Production (t),4322.0,t,A,Kazakhstan,FAOSTAT_QCL
+2005,Rapeseed,Production (t),30000.0,t,X,Kazakhstan,FAOSTAT_QCL
+2006,Rapeseed,Production (t),63300.0,t,A,Kazakhstan,FAOSTAT_QCL
+2007,Rapeseed,Production (t),118310.0,t,A,Kazakhstan,FAOSTAT_QCL
+2008,Rapeseed,Production (t),82690.0,t,A,Kazakhstan,FAOSTAT_QCL
+2009,Rapeseed,Production (t),107220.0,t,A,Kazakhstan,FAOSTAT_QCL
+2010,Rapeseed,Production (t),109170.0,t,A,Kazakhstan,FAOSTAT_QCL
+2011,Rapeseed,Production (t),148474.5,t,A,Kazakhstan,FAOSTAT_QCL
+2012,Rapeseed,Production (t),116865.4,t,A,Kazakhstan,FAOSTAT_QCL
+2013,Rapeseed,Production (t),241795.8,t,A,Kazakhstan,FAOSTAT_QCL
+2014,Rapeseed,Production (t),241477.0,t,A,Kazakhstan,FAOSTAT_QCL
+2015,Rapeseed,Production (t),138170.0,t,A,Kazakhstan,FAOSTAT_QCL
+2016,Rapeseed,Production (t),169761.0,t,A,Kazakhstan,FAOSTAT_QCL
+2017,Rapeseed,Production (t),278975.0,t,A,Kazakhstan,FAOSTAT_QCL
+2018,Rapeseed,Production (t),394341.33,t,A,Kazakhstan,FAOSTAT_QCL
+2019,Rapeseed,Production (t),240792.85,t,A,Kazakhstan,FAOSTAT_QCL
+2020,Rapeseed,Production (t),153167.54,t,A,Kazakhstan,FAOSTAT_QCL
+2021,Rapeseed,Production (t),145728.4,t,A,Kazakhstan,FAOSTAT_QCL
+2022,Rapeseed,Production (t),188590.44,t,A,Kazakhstan,FAOSTAT_QCL
+2023,Rapeseed,Production (t),123215.33,t,A,Kazakhstan,FAOSTAT_QCL
+2024,Rapeseed,Production (t),286086.7,t,A,Kazakhstan,FAOSTAT_QCL
+1992,Sunflower seed,Area harvested (ha),261340.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1993,Sunflower seed,Area harvested (ha),248020.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1994,Sunflower seed,Area harvested (ha),257320.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1995,Sunflower seed,Area harvested (ha),315870.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1996,Sunflower seed,Area harvested (ha),290180.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1997,Sunflower seed,Area harvested (ha),191200.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1998,Sunflower seed,Area harvested (ha),198300.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1999,Sunflower seed,Area harvested (ha),213300.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2000,Sunflower seed,Area harvested (ha),261700.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2001,Sunflower seed,Area harvested (ha),248840.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2002,Sunflower seed,Area harvested (ha),319700.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2003,Sunflower seed,Area harvested (ha),431000.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2004,Sunflower seed,Area harvested (ha),446500.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2005,Sunflower seed,Area harvested (ha),422000.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2006,Sunflower seed,Area harvested (ha),453100.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2007,Sunflower seed,Area harvested (ha),349700.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2008,Sunflower seed,Area harvested (ha),453800.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2009,Sunflower seed,Area harvested (ha),646800.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2010,Sunflower seed,Area harvested (ha),744500.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2011,Sunflower seed,Area harvested (ha),882469.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2012,Sunflower seed,Area harvested (ha),682257.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2013,Sunflower seed,Area harvested (ha),822429.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2014,Sunflower seed,Area harvested (ha),768739.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2015,Sunflower seed,Area harvested (ha),701307.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2016,Sunflower seed,Area harvested (ha),807470.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2017,Sunflower seed,Area harvested (ha),882963.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2018,Sunflower seed,Area harvested (ha),849583.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2019,Sunflower seed,Area harvested (ha),815288.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2020,Sunflower seed,Area harvested (ha),749903.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2021,Sunflower seed,Area harvested (ha),939766.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2022,Sunflower seed,Area harvested (ha),1090492.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2023,Sunflower seed,Area harvested (ha),1127114.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2024,Sunflower seed,Area harvested (ha),1256717.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1992,Sunflower seed,Production (t),98400.0,t,A,Kazakhstan,FAOSTAT_QCL
+1993,Sunflower seed,Production (t),85500.0,t,A,Kazakhstan,FAOSTAT_QCL
+1994,Sunflower seed,Production (t),96700.0,t,A,Kazakhstan,FAOSTAT_QCL
+1995,Sunflower seed,Production (t),98700.0,t,A,Kazakhstan,FAOSTAT_QCL
+1996,Sunflower seed,Production (t),64333.0,t,A,Kazakhstan,FAOSTAT_QCL
+1997,Sunflower seed,Production (t),54464.0,t,A,Kazakhstan,FAOSTAT_QCL
+1998,Sunflower seed,Production (t),83230.0,t,A,Kazakhstan,FAOSTAT_QCL
+1999,Sunflower seed,Production (t),104300.0,t,A,Kazakhstan,FAOSTAT_QCL
+2000,Sunflower seed,Production (t),104630.0,t,A,Kazakhstan,FAOSTAT_QCL
+2001,Sunflower seed,Production (t),149115.0,t,A,Kazakhstan,FAOSTAT_QCL
+2002,Sunflower seed,Production (t),189820.0,t,A,Kazakhstan,FAOSTAT_QCL
+2003,Sunflower seed,Production (t),292560.0,t,A,Kazakhstan,FAOSTAT_QCL
+2004,Sunflower seed,Production (t),265610.0,t,A,Kazakhstan,FAOSTAT_QCL
+2005,Sunflower seed,Production (t),267360.0,t,A,Kazakhstan,FAOSTAT_QCL
+2006,Sunflower seed,Production (t),267950.0,t,A,Kazakhstan,FAOSTAT_QCL
+2007,Sunflower seed,Production (t),205820.0,t,A,Kazakhstan,FAOSTAT_QCL
+2008,Sunflower seed,Production (t),185750.0,t,A,Kazakhstan,FAOSTAT_QCL
+2009,Sunflower seed,Production (t),367890.0,t,A,Kazakhstan,FAOSTAT_QCL
+2010,Sunflower seed,Production (t),328900.0,t,A,Kazakhstan,FAOSTAT_QCL
+2011,Sunflower seed,Production (t),409200.0,t,A,Kazakhstan,FAOSTAT_QCL
+2012,Sunflower seed,Production (t),400272.2,t,A,Kazakhstan,FAOSTAT_QCL
+2013,Sunflower seed,Production (t),572690.0,t,A,Kazakhstan,FAOSTAT_QCL
+2014,Sunflower seed,Production (t),512765.0,t,A,Kazakhstan,FAOSTAT_QCL
+2015,Sunflower seed,Production (t),534047.0,t,A,Kazakhstan,FAOSTAT_QCL
+2016,Sunflower seed,Production (t),754858.0,t,A,Kazakhstan,FAOSTAT_QCL
+2017,Sunflower seed,Production (t),902888.0,t,A,Kazakhstan,FAOSTAT_QCL
+2018,Sunflower seed,Production (t),847705.48,t,A,Kazakhstan,FAOSTAT_QCL
+2019,Sunflower seed,Production (t),838710.34,t,A,Kazakhstan,FAOSTAT_QCL
+2020,Sunflower seed,Production (t),844256.13,t,A,Kazakhstan,FAOSTAT_QCL
+2021,Sunflower seed,Production (t),1031753.91,t,A,Kazakhstan,FAOSTAT_QCL
+2022,Sunflower seed,Production (t),1304342.06,t,A,Kazakhstan,FAOSTAT_QCL
+2023,Sunflower seed,Production (t),1236443.74,t,A,Kazakhstan,FAOSTAT_QCL
+2024,Sunflower seed,Production (t),1834397.44,t,A,Kazakhstan,FAOSTAT_QCL
+1992,Wheat,Area harvested (ha),13722900.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1993,Wheat,Area harvested (ha),12622000.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1994,Wheat,Area harvested (ha),12086000.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1995,Wheat,Area harvested (ha),11290900.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1996,Wheat,Area harvested (ha),11233900.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1997,Wheat,Area harvested (ha),10599000.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1998,Wheat,Area harvested (ha),9126900.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1999,Wheat,Area harvested (ha),8736300.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2000,Wheat,Area harvested (ha),10050100.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2001,Wheat,Area harvested (ha),10766100.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2002,Wheat,Area harvested (ha),11656500.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2003,Wheat,Area harvested (ha),11255700.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2004,Wheat,Area harvested (ha),11785200.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2005,Wheat,Area harvested (ha),11813200.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2006,Wheat,Area harvested (ha),11861200.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2007,Wheat,Area harvested (ha),12683000.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2008,Wheat,Area harvested (ha),12906300.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2009,Wheat,Area harvested (ha),14279800.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2010,Wheat,Area harvested (ha),13138000.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2011,Wheat,Area harvested (ha),13686428.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2012,Wheat,Area harvested (ha),12410935.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2013,Wheat,Area harvested (ha),12953532.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2014,Wheat,Area harvested (ha),11923108.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2015,Wheat,Area harvested (ha),11569536.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2016,Wheat,Area harvested (ha),12373452.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2017,Wheat,Area harvested (ha),11911989.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2018,Wheat,Area harvested (ha),11354380.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2019,Wheat,Area harvested (ha),11296643.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2020,Wheat,Area harvested (ha),12057071.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2021,Wheat,Area harvested (ha),12719434.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2022,Wheat,Area harvested (ha),12889831.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2023,Wheat,Area harvested (ha),13129837.0,ha,A,Kazakhstan,FAOSTAT_QCL
+2024,Wheat,Area harvested (ha),13067082.0,ha,A,Kazakhstan,FAOSTAT_QCL
+1992,Wheat,Production (t),18284600.0,t,A,Kazakhstan,FAOSTAT_QCL
+1993,Wheat,Production (t),11585000.0,t,A,Kazakhstan,FAOSTAT_QCL
+1994,Wheat,Production (t),9052200.0,t,A,Kazakhstan,FAOSTAT_QCL
+1995,Wheat,Production (t),6490400.0,t,A,Kazakhstan,FAOSTAT_QCL
+1996,Wheat,Production (t),7678100.0,t,A,Kazakhstan,FAOSTAT_QCL
+1997,Wheat,Production (t),8955000.0,t,A,Kazakhstan,FAOSTAT_QCL
+1998,Wheat,Production (t),4746300.0,t,A,Kazakhstan,FAOSTAT_QCL
+1999,Wheat,Production (t),11241800.0,t,A,Kazakhstan,FAOSTAT_QCL
+2000,Wheat,Production (t),9073460.0,t,A,Kazakhstan,FAOSTAT_QCL
+2001,Wheat,Production (t),12706810.0,t,A,Kazakhstan,FAOSTAT_QCL
+2002,Wheat,Production (t),12699980.0,t,A,Kazakhstan,FAOSTAT_QCL
+2003,Wheat,Production (t),11537420.0,t,A,Kazakhstan,FAOSTAT_QCL
+2004,Wheat,Production (t),9936970.0,t,A,Kazakhstan,FAOSTAT_QCL
+2005,Wheat,Production (t),11198330.0,t,A,Kazakhstan,FAOSTAT_QCL
+2006,Wheat,Production (t),13460480.0,t,A,Kazakhstan,FAOSTAT_QCL
+2007,Wheat,Production (t),16466870.0,t,A,Kazakhstan,FAOSTAT_QCL
+2008,Wheat,Production (t),12538190.0,t,A,Kazakhstan,FAOSTAT_QCL
+2009,Wheat,Production (t),17052020.0,t,A,Kazakhstan,FAOSTAT_QCL
+2010,Wheat,Production (t),9638400.0,t,A,Kazakhstan,FAOSTAT_QCL
+2011,Wheat,Production (t),22732066.51,t,A,Kazakhstan,FAOSTAT_QCL
+2012,Wheat,Production (t),9841127.62,t,A,Kazakhstan,FAOSTAT_QCL
+2013,Wheat,Production (t),13940809.27,t,A,Kazakhstan,FAOSTAT_QCL
+2014,Wheat,Production (t),12996864.74,t,A,Kazakhstan,FAOSTAT_QCL
+2015,Wheat,Production (t),13746967.0,t,A,Kazakhstan,FAOSTAT_QCL
+2016,Wheat,Production (t),14985379.0,t,A,Kazakhstan,FAOSTAT_QCL
+2017,Wheat,Production (t),14802865.0,t,A,Kazakhstan,FAOSTAT_QCL
+2018,Wheat,Production (t),13944108.0,t,A,Kazakhstan,FAOSTAT_QCL
+2019,Wheat,Production (t),11451648.71,t,A,Kazakhstan,FAOSTAT_QCL
+2020,Wheat,Production (t),14257950.14,t,A,Kazakhstan,FAOSTAT_QCL
+2021,Wheat,Production (t),11814123.97,t,A,Kazakhstan,FAOSTAT_QCL
+2022,Wheat,Production (t),16404491.25,t,A,Kazakhstan,FAOSTAT_QCL
+2023,Wheat,Production (t),12110913.0,t,A,Kazakhstan,FAOSTAT_QCL
+2024,Wheat,Production (t),18576694.15,t,A,Kazakhstan,FAOSTAT_QCL
+1994,Barley,Producer Price (USD/t),83.9,USD,A,Kazakhstan,FAOSTAT_PP1
+1995,Barley,Producer Price (USD/t),65.3,USD,A,Kazakhstan,FAOSTAT_PP1
+1996,Barley,Producer Price (USD/t),80.4,USD,A,Kazakhstan,FAOSTAT_PP1
+1997,Barley,Producer Price (USD/t),64.5,USD,A,Kazakhstan,FAOSTAT_PP1
+1998,Barley,Producer Price (USD/t),52.3,USD,A,Kazakhstan,FAOSTAT_PP1
+1999,Barley,Producer Price (USD/t),35.3,USD,A,Kazakhstan,FAOSTAT_PP1
+2000,Barley,Producer Price (USD/t),45.1,USD,A,Kazakhstan,FAOSTAT_PP1
+2001,Barley,Producer Price (USD/t),53.6,USD,A,Kazakhstan,FAOSTAT_PP1
+2002,Barley,Producer Price (USD/t),46.3,USD,A,Kazakhstan,FAOSTAT_PP1
+2003,Barley,Producer Price (USD/t),45.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2004,Barley,Producer Price (USD/t),63.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2005,Barley,Producer Price (USD/t),69.9,USD,A,Kazakhstan,FAOSTAT_PP1
+2006,Barley,Producer Price (USD/t),73.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2007,Barley,Producer Price (USD/t),87.3,USD,A,Kazakhstan,FAOSTAT_PP1
+2008,Barley,Producer Price (USD/t),149.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2009,Barley,Producer Price (USD/t),125.3,USD,A,Kazakhstan,FAOSTAT_PP1
+2010,Barley,Producer Price (USD/t),92.3,USD,A,Kazakhstan,FAOSTAT_PP1
+2011,Barley,Producer Price (USD/t),116.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2012,Barley,Producer Price (USD/t),125.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2013,Barley,Producer Price (USD/t),158.5,USD,A,Kazakhstan,FAOSTAT_PP1
+2014,Barley,Producer Price (USD/t),127.2,USD,A,Kazakhstan,FAOSTAT_PP1
+2015,Barley,Producer Price (USD/t),109.5,USD,A,Kazakhstan,FAOSTAT_PP1
+2016,Barley,Producer Price (USD/t),76.6,USD,A,Kazakhstan,FAOSTAT_PP1
+2017,Barley,Producer Price (USD/t),101.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2018,Barley,Producer Price (USD/t),100.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2019,Barley,Producer Price (USD/t),122.9,USD,A,Kazakhstan,FAOSTAT_PP1
+2020,Barley,Producer Price (USD/t),132.9,USD,A,Kazakhstan,FAOSTAT_PP1
+2021,Barley,Producer Price (USD/t),187.2,USD,A,Kazakhstan,FAOSTAT_PP1
+2022,Barley,Producer Price (USD/t),195.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2023,Barley,Producer Price (USD/t),151.5,USD,A,Kazakhstan,FAOSTAT_PP1
+2024,Barley,Producer Price (USD/t),126.9,USD,A,Kazakhstan,FAOSTAT_PP1
+1994,Maize (corn),Producer Price (USD/t),202.0,USD,A,Kazakhstan,FAOSTAT_PP1
+1995,Maize (corn),Producer Price (USD/t),132.2,USD,A,Kazakhstan,FAOSTAT_PP1
+1996,Maize (corn),Producer Price (USD/t),101.6,USD,A,Kazakhstan,FAOSTAT_PP1
+1997,Maize (corn),Producer Price (USD/t),109.8,USD,A,Kazakhstan,FAOSTAT_PP1
+1998,Maize (corn),Producer Price (USD/t),84.8,USD,A,Kazakhstan,FAOSTAT_PP1
+1999,Maize (corn),Producer Price (USD/t),58.5,USD,A,Kazakhstan,FAOSTAT_PP1
+2000,Maize (corn),Producer Price (USD/t),65.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2001,Maize (corn),Producer Price (USD/t),72.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2002,Maize (corn),Producer Price (USD/t),70.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2003,Maize (corn),Producer Price (USD/t),68.2,USD,A,Kazakhstan,FAOSTAT_PP1
+2004,Maize (corn),Producer Price (USD/t),91.1,USD,A,Kazakhstan,FAOSTAT_PP1
+2005,Maize (corn),Producer Price (USD/t),103.5,USD,A,Kazakhstan,FAOSTAT_PP1
+2006,Maize (corn),Producer Price (USD/t),107.5,USD,A,Kazakhstan,FAOSTAT_PP1
+2007,Maize (corn),Producer Price (USD/t),123.1,USD,A,Kazakhstan,FAOSTAT_PP1
+2008,Maize (corn),Producer Price (USD/t),176.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2009,Maize (corn),Producer Price (USD/t),157.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2010,Maize (corn),Producer Price (USD/t),153.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2011,Maize (corn),Producer Price (USD/t),184.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2012,Maize (corn),Producer Price (USD/t),194.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2013,Maize (corn),Producer Price (USD/t),200.7,USD,A,Kazakhstan,FAOSTAT_PP1
+2014,Maize (corn),Producer Price (USD/t),163.6,USD,A,Kazakhstan,FAOSTAT_PP1
+2015,Maize (corn),Producer Price (USD/t),155.6,USD,A,Kazakhstan,FAOSTAT_PP1
+2016,Maize (corn),Producer Price (USD/t),114.2,USD,A,Kazakhstan,FAOSTAT_PP1
+2017,Maize (corn),Producer Price (USD/t),114.9,USD,A,Kazakhstan,FAOSTAT_PP1
+2018,Maize (corn),Producer Price (USD/t),113.7,USD,A,Kazakhstan,FAOSTAT_PP1
+2019,Maize (corn),Producer Price (USD/t),153.1,USD,A,Kazakhstan,FAOSTAT_PP1
+2020,Maize (corn),Producer Price (USD/t),177.4,USD,A,Kazakhstan,FAOSTAT_PP1
+2021,Maize (corn),Producer Price (USD/t),133.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2022,Maize (corn),Producer Price (USD/t),179.9,USD,A,Kazakhstan,FAOSTAT_PP1
+2023,Maize (corn),Producer Price (USD/t),171.5,USD,A,Kazakhstan,FAOSTAT_PP1
+2024,Maize (corn),Producer Price (USD/t),135.6,USD,A,Kazakhstan,FAOSTAT_PP1
+2013,Rapeseed,Producer Price (USD/t),314.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2014,Rapeseed,Producer Price (USD/t),266.2,USD,A,Kazakhstan,FAOSTAT_PP1
+2015,Rapeseed,Producer Price (USD/t),227.2,USD,A,Kazakhstan,FAOSTAT_PP1
+2016,Rapeseed,Producer Price (USD/t),209.1,USD,A,Kazakhstan,FAOSTAT_PP1
+2017,Rapeseed,Producer Price (USD/t),309.6,USD,A,Kazakhstan,FAOSTAT_PP1
+2018,Rapeseed,Producer Price (USD/t),319.9,USD,A,Kazakhstan,FAOSTAT_PP1
+2019,Rapeseed,Producer Price (USD/t),343.1,USD,A,Kazakhstan,FAOSTAT_PP1
+2020,Rapeseed,Producer Price (USD/t),424.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2021,Rapeseed,Producer Price (USD/t),624.5,USD,A,Kazakhstan,FAOSTAT_PP1
+2022,Rapeseed,Producer Price (USD/t),479.1,USD,A,Kazakhstan,FAOSTAT_PP1
+2023,Rapeseed,Producer Price (USD/t),410.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2024,Rapeseed,Producer Price (USD/t),413.7,USD,A,Kazakhstan,FAOSTAT_PP1
+1994,Sunflower seed,Producer Price (USD/t),228.6,USD,A,Kazakhstan,FAOSTAT_PP1
+1995,Sunflower seed,Producer Price (USD/t),236.7,USD,A,Kazakhstan,FAOSTAT_PP1
+1996,Sunflower seed,Producer Price (USD/t),206.5,USD,A,Kazakhstan,FAOSTAT_PP1
+1997,Sunflower seed,Producer Price (USD/t),185.4,USD,A,Kazakhstan,FAOSTAT_PP1
+1998,Sunflower seed,Producer Price (USD/t),214.1,USD,A,Kazakhstan,FAOSTAT_PP1
+1999,Sunflower seed,Producer Price (USD/t),155.7,USD,A,Kazakhstan,FAOSTAT_PP1
+2000,Sunflower seed,Producer Price (USD/t),118.1,USD,A,Kazakhstan,FAOSTAT_PP1
+2001,Sunflower seed,Producer Price (USD/t),129.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2002,Sunflower seed,Producer Price (USD/t),168.1,USD,A,Kazakhstan,FAOSTAT_PP1
+2003,Sunflower seed,Producer Price (USD/t),160.9,USD,A,Kazakhstan,FAOSTAT_PP1
+2004,Sunflower seed,Producer Price (USD/t),184.7,USD,A,Kazakhstan,FAOSTAT_PP1
+2005,Sunflower seed,Producer Price (USD/t),197.3,USD,A,Kazakhstan,FAOSTAT_PP1
+2006,Sunflower seed,Producer Price (USD/t),217.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2007,Sunflower seed,Producer Price (USD/t),238.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2008,Sunflower seed,Producer Price (USD/t),336.7,USD,A,Kazakhstan,FAOSTAT_PP1
+2009,Sunflower seed,Producer Price (USD/t),287.3,USD,A,Kazakhstan,FAOSTAT_PP1
+2010,Sunflower seed,Producer Price (USD/t),295.9,USD,A,Kazakhstan,FAOSTAT_PP1
+2011,Sunflower seed,Producer Price (USD/t),454.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2012,Sunflower seed,Producer Price (USD/t),406.2,USD,A,Kazakhstan,FAOSTAT_PP1
+2013,Sunflower seed,Producer Price (USD/t),473.9,USD,A,Kazakhstan,FAOSTAT_PP1
+2014,Sunflower seed,Producer Price (USD/t),322.5,USD,A,Kazakhstan,FAOSTAT_PP1
+2015,Sunflower seed,Producer Price (USD/t),277.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2016,Sunflower seed,Producer Price (USD/t),247.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2017,Sunflower seed,Producer Price (USD/t),251.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2018,Sunflower seed,Producer Price (USD/t),241.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2019,Sunflower seed,Producer Price (USD/t),249.6,USD,A,Kazakhstan,FAOSTAT_PP1
+2020,Sunflower seed,Producer Price (USD/t),304.9,USD,A,Kazakhstan,FAOSTAT_PP1
+2021,Sunflower seed,Producer Price (USD/t),456.6,USD,A,Kazakhstan,FAOSTAT_PP1
+2022,Sunflower seed,Producer Price (USD/t),401.3,USD,A,Kazakhstan,FAOSTAT_PP1
+2023,Sunflower seed,Producer Price (USD/t),311.1,USD,A,Kazakhstan,FAOSTAT_PP1
+2024,Sunflower seed,Producer Price (USD/t),312.5,USD,A,Kazakhstan,FAOSTAT_PP1
+1994,Wheat,Producer Price (USD/t),104.3,USD,A,Kazakhstan,FAOSTAT_PP1
+1995,Wheat,Producer Price (USD/t),91.3,USD,A,Kazakhstan,FAOSTAT_PP1
+1996,Wheat,Producer Price (USD/t),116.8,USD,A,Kazakhstan,FAOSTAT_PP1
+1997,Wheat,Producer Price (USD/t),96.0,USD,A,Kazakhstan,FAOSTAT_PP1
+1998,Wheat,Producer Price (USD/t),72.2,USD,A,Kazakhstan,FAOSTAT_PP1
+1999,Wheat,Producer Price (USD/t),50.5,USD,A,Kazakhstan,FAOSTAT_PP1
+2000,Wheat,Producer Price (USD/t),69.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2001,Wheat,Producer Price (USD/t),77.2,USD,A,Kazakhstan,FAOSTAT_PP1
+2002,Wheat,Producer Price (USD/t),63.1,USD,A,Kazakhstan,FAOSTAT_PP1
+2003,Wheat,Producer Price (USD/t),80.7,USD,A,Kazakhstan,FAOSTAT_PP1
+2004,Wheat,Producer Price (USD/t),107.1,USD,A,Kazakhstan,FAOSTAT_PP1
+2005,Wheat,Producer Price (USD/t),97.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2006,Wheat,Producer Price (USD/t),97.2,USD,A,Kazakhstan,FAOSTAT_PP1
+2007,Wheat,Producer Price (USD/t),136.9,USD,A,Kazakhstan,FAOSTAT_PP1
+2008,Wheat,Producer Price (USD/t),224.3,USD,A,Kazakhstan,FAOSTAT_PP1
+2009,Wheat,Producer Price (USD/t),174.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2010,Wheat,Producer Price (USD/t),148.1,USD,A,Kazakhstan,FAOSTAT_PP1
+2011,Wheat,Producer Price (USD/t),197.8,USD,A,Kazakhstan,FAOSTAT_PP1
+2012,Wheat,Producer Price (USD/t),180.5,USD,A,Kazakhstan,FAOSTAT_PP1
+2013,Wheat,Producer Price (USD/t),207.1,USD,A,Kazakhstan,FAOSTAT_PP1
+2014,Wheat,Producer Price (USD/t),169.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2015,Wheat,Producer Price (USD/t),150.3,USD,A,Kazakhstan,FAOSTAT_PP1
+2016,Wheat,Producer Price (USD/t),105.1,USD,A,Kazakhstan,FAOSTAT_PP1
+2017,Wheat,Producer Price (USD/t),117.4,USD,A,Kazakhstan,FAOSTAT_PP1
+2018,Wheat,Producer Price (USD/t),116.3,USD,A,Kazakhstan,FAOSTAT_PP1
+2019,Wheat,Producer Price (USD/t),160.9,USD,A,Kazakhstan,FAOSTAT_PP1
+2020,Wheat,Producer Price (USD/t),189.2,USD,A,Kazakhstan,FAOSTAT_PP1
+2021,Wheat,Producer Price (USD/t),222.3,USD,A,Kazakhstan,FAOSTAT_PP1
+2022,Wheat,Producer Price (USD/t),255.1,USD,A,Kazakhstan,FAOSTAT_PP1
+2023,Wheat,Producer Price (USD/t),203.0,USD,A,Kazakhstan,FAOSTAT_PP1
+2024,Wheat,Producer Price (USD/t),182.1,USD,A,Kazakhstan,FAOSTAT_PP1
