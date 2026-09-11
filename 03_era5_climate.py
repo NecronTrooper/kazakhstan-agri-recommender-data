@@ -306,20 +306,21 @@ def check_config() -> bool:
         print("  ✅ Конфигурация: переменные окружения")
         return True
     rc = os.path.join(os.path.expanduser("~"), ".cdsapirc")
+    setup_hint = "см. README.md, раздел \"Настройка ERA5 (Скрипт 03)\""
     if not os.path.exists(rc):
         print(f"  ❌ Файл не найден: {rc}")
-        print(f"     Запустите: python 03_setup_cds.py")
+        print(f"     {setup_hint}")
         return False
     with open(rc, encoding="utf-8") as f:
         content = f.read()
     if "cds.climate.copernicus.eu/api" not in content or "key:" not in content:
-        print("  ❌ Неверный формат .cdsapirc — запустите python 03_setup_cds.py")
+        print(f"  ❌ Неверный формат .cdsapirc — {setup_hint}")
         return False
     for line in content.splitlines():
         if line.strip().startswith("key:"):
             token = line.split(":", 1)[1].strip()
             if token in ("", "<PERSONAL-ACCESS-TOKEN>", "ВАШ-ТОКЕН-ЗДЕСЬ"):
-                print("  ❌ Токен не заполнен — запустите python 03_setup_cds.py")
+                print(f"  ❌ Токен не заполнен — {setup_hint}")
                 return False
     print(f"  ✅ ~/.cdsapirc настроен корректно")
     return True
