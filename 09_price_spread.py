@@ -126,7 +126,7 @@ def main():
 
     dom_path = os.path.join(OUTPUT_DIR, "08_grainunion_domestic_prices.csv")
     if not os.path.exists(dom_path):
-        print(f"  ❌ {dom_path} не найден — сначала запустите 08_grainunion_prices.py")
+        print(f"  {dom_path} не найден — сначала запустите 08_grainunion_prices.py")
         return
 
     dom = load_domestic_wheat3()
@@ -149,7 +149,7 @@ def main():
     merged["world_spread_pct"] = merged["world_spread_usd_per_t"] / merged["world_usd_per_t"] * 100
     max_stale = merged["world_price_months_stale"].max()
     if max_stale and max_stale > 0:
-        print(f"  ⚠️  Мировая цена устарела до {int(max_stale)} мес. относительно даты обзора")
+        print(f"   Мировая цена устарела до {int(max_stale)} мес. относительно даты обзора")
         print(f"      (Pink Sheet ещё не опубликовал более свежие месяцы) — используется")
         print(f"      последнее известное значение, помечено в колонке world_price_months_stale.")
 
@@ -162,7 +162,7 @@ def main():
     ]
     merged[out_cols].to_csv(OUT_CSV, index=False, encoding="utf-8-sig")
 
-    print(f"\n  💾 Сохранено: {OUT_CSV} ({len(merged)} недель)")
+    print(f"\n  Сохранено: {OUT_CSV} ({len(merged)} недель)")
     print(f"\n  Пшеница 3 класс (усреднено по подклассам), последние недели:")
     print(merged[["date_from", "domestic_usd_per_t", "export_usd_per_t",
                    "export_spread_usd_per_t", "world_usd_per_t", "world_spread_usd_per_t"]]
@@ -177,7 +177,7 @@ def main():
     else:
         print("  -> в среднем за период продажа на внутренний элеватор выгоднее экспорта.")
 
-    print(f"\n  ⚠️  Напоминание: {len(merged)} недель — недостаточно для отдельной")
+    print(f"\n   Напоминание: {len(merged)} недель — недостаточно для отдельной")
     print(f"  time-series модели самого спреда (нужно 1-2+ сезонных цикла).")
     print(f"  Используйте как описательный сигнал/корректирующий признак, не как")
     print(f"  самостоятельный прогнозный ряд. Перезапускайте 08 и 09 по мере")

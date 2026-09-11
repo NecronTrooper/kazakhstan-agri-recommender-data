@@ -105,7 +105,7 @@ def parse_soilgrids_response(data: dict, lat: float, lon: float) -> list:
                         "source":    "SoilGrids_v2",
                     })
     except (KeyError, TypeError) as e:
-        print(f"    ⚠️  Ошибка парсинга [{lat},{lon}]: {e}")
+        print(f"     Ошибка парсинга [{lat},{lon}]: {e}")
     return records
 
 
@@ -124,10 +124,10 @@ def verify_api() -> bool:
         data = resp.json()
         layers = data.get("properties", {}).get("layers", [])
         val = layers[0]["depths"][0]["values"].get("mean") if layers else None
-        print(f"  ✅ SoilGrids API доступен. pH (0-5cm, Астана): {val}")
+        print(f"  SoilGrids API доступен. pH (0-5cm, Астана): {val}")
         return True
     except Exception as e:
-        print(f"  ❌ SoilGrids API недоступен: {e}")
+        print(f"  SoilGrids API недоступен: {e}")
         return False
 
 
@@ -145,9 +145,9 @@ def collect_soilgrids(points: list) -> pd.DataFrame:
             all_records.extend(records)
             print(f"    → {len(records)} значений")
         except requests.exceptions.HTTPError as e:
-            print(f"    ⚠️  HTTP {e.response.status_code}: пропуск")
+            print(f"     HTTP {e.response.status_code}: пропуск")
         except Exception as e:
-            print(f"    ⚠️  Ошибка: {e}")
+            print(f"     Ошибка: {e}")
 
         # Rate limit: 5 запросов / минута
         if i < total - 1:
@@ -187,7 +187,7 @@ def main():
     df_long = collect_soilgrids(SAMPLE_POINTS)
 
     if df_long.empty:
-        print("  ❌ Данные не получены.")
+        print("  Данные не получены.")
         return
 
     # Сохраняем длинный формат
@@ -199,8 +199,8 @@ def main():
     wide_path = os.path.join(OUTPUT_DIR, "04_soilgrids_wide.csv")
     df_wide.to_csv(wide_path, index=False, encoding="utf-8-sig")
 
-    print(f"\n  💾 Длинный формат: {long_path} ({len(df_long)} строк)")
-    print(f"  💾 Широкий формат: {wide_path} ({len(df_wide)} строк)")
+    print(f"\n  Длинный формат: {long_path} ({len(df_long)} строк)")
+    print(f"  Широкий формат: {wide_path} ({len(df_wide)} строк)")
     print(f"  Свойства: {df_long['property'].unique().tolist()}")
     print(f"  Глубины: {df_long['depth'].unique().tolist()}")
     print(f"  Точек с данными: {df_long[['lat','lon']].drop_duplicates().shape[0]}")

@@ -160,12 +160,12 @@ def verify_bulk_server() -> bool:
         resp = requests.head(url, timeout=15, allow_redirects=True)
         if resp.status_code < 400:
             size_mb = int(resp.headers.get("content-length", 0)) / 1e6
-            print(f"  ✅ Bulk-сервер доступен (HTTP {resp.status_code}, ~{size_mb:.0f} МБ)")
+            print(f"  Bulk-сервер доступен (HTTP {resp.status_code}, ~{size_mb:.0f} МБ)")
             return True
-        print(f"  ❌ HTTP {resp.status_code}")
+        print(f"  HTTP {resp.status_code}")
         return False
     except requests.exceptions.RequestException as e:
-        print(f"  ❌ Bulk-сервер недоступен: {e}")
+        print(f"  Bulk-сервер недоступен: {e}")
         return False
  
  
@@ -190,20 +190,20 @@ def main():
         raw_qcl = download_and_extract("QCL")
         qcl = filter_kazakhstan(raw_qcl, "QCL")
         frames.append(qcl)
-        print(f"  ✅ QCL: {len(qcl)} записей")
+        print(f"  QCL: {len(qcl)} записей")
         print(f"     Культуры: {qcl['crop'].unique().tolist()}")
         print(f"     Период:   {qcl['year'].min()}–{qcl['year'].max()}")
     except Exception as e:
-        print(f"  ❌ Ошибка QCL: {e}")
+        print(f"  Ошибка QCL: {e}")
  
     print("\n  [2/2] PP1 — цены производителей")
     try:
         raw_pp1 = download_and_extract("PP1")
         pp1 = filter_kazakhstan(raw_pp1, "PP1")
         frames.append(pp1)
-        print(f"  ✅ PP1: {len(pp1)} записей")
+        print(f"  PP1: {len(pp1)} записей")
     except Exception as e:
-        print(f"  ❌ Ошибка PP1: {e}")
+        print(f"  Ошибка PP1: {e}")
  
     if not frames:
         print("\n  Данные не получены.")
@@ -214,7 +214,7 @@ def main():
     result.to_csv(out_path, index=False, encoding="utf-8-sig")
  
     print(f"\n  {'='*50}")
-    print(f"  💾 Сохранено: {out_path}")
+    print(f"  Сохранено: {out_path}")
     print(f"  Итого строк:  {len(result)}")
     print(f"  Период:       {result['year'].min()}–{result['year'].max()}")
     print(f"\n  Сводка:")

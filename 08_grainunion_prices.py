@@ -97,7 +97,7 @@ def list_review_articles(known_ids: set) -> list:
         try:
             html = fetch(url)
         except requests.exceptions.RequestException as e:
-            print(f"    ⚠ Ошибка загрузки: {e}")
+            print(f"    Ошибка загрузки: {e}")
             break
 
         pattern = re.compile(
@@ -276,7 +276,7 @@ def main():
             try:
                 raw_html = fetch(url)
             except requests.exceptions.RequestException as e:
-                print(f"    ⚠ Ошибка: {e}")
+                print(f"    Ошибка: {e}")
                 continue
             with open(cache_path, "w", encoding="utf-8") as f:
                 f.write(raw_html)
@@ -304,20 +304,20 @@ def main():
             subset=["article_id", "crop_label", "orientation", "basis"]
         )
         combined.to_csv(OUT_CSV, index=False, encoding="utf-8-sig")
-        print(f"\n  💾 Сохранено: {OUT_CSV}")
+        print(f"\n  Сохранено: {OUT_CSV}")
         print(f"  Всего записей: {len(combined)}, выпусков: {combined['article_id'].nunique()}")
     elif not existing.empty:
         print("\n  Новых выпусков нет, файл не менялся.")
         print(f"  Текущий объём: {len(existing)} записей, {existing['article_id'].nunique()} выпусков.")
     else:
-        print("\n  ❌ Не удалось собрать ни одной записи.")
+        print("\n  Не удалось собрать ни одной записи.")
 
     if all_new_fx:
         new_fx_df = pd.DataFrame(all_new_fx)
         combined_fx = pd.concat([existing_fx, new_fx_df], ignore_index=True)
         combined_fx = combined_fx.drop_duplicates(subset=["article_id"])
         combined_fx.to_csv(FX_CSV, index=False, encoding="utf-8-sig")
-        print(f"  💾 Курсы валют: {FX_CSV} ({len(combined_fx)} выпусков)")
+        print(f"  Курсы валют: {FX_CSV} ({len(combined_fx)} выпусков)")
 
     print("\n  Для регулярного сбора запускайте этот скрипт периодически")
     print("  (например, раз в неделю) — уже собранные выпуски не скачиваются заново.")

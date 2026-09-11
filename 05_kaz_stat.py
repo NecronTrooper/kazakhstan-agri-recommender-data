@@ -336,7 +336,7 @@ def fetch_combined_region(region_label: str, element_id: int, include_districts:
     frames = []
     for metric, sheet in sheet_by_metric.items():
         if sheet is None:
-            print(f"    ⚠ {region_label}: не найден лист для metric={metric}")
+            print(f"    {region_label}: не найден лист для metric={metric}")
             continue
         raw = pd.read_excel(path, sheet_name=sheet, header=None)
         frames.append(parse_crop_block_sheet(raw, region_label, metric, include_districts=include_districts))
@@ -399,7 +399,7 @@ def fetch_akmola(include_districts: bool = False) -> pd.DataFrame:
                 year_row = r
                 break
         if year_row is None:
-            print(f"    ⚠ Акмолинская/{crop_group}/{metric}: строка с годами не найдена")
+            print(f"    Акмолинская/{crop_group}/{metric}: строка с годами не найдена")
             continue
 
         segment_crop = crop_group
@@ -415,7 +415,7 @@ def fetch_akmola(include_districts: bool = False) -> pd.DataFrame:
                         break
             if total_row is None:
                 if segment_crop == crop_group:
-                    print(f"    ⚠ Акмолинская/{crop_group}/{metric}: итоговая строка по области не найдена")
+                    print(f"    Акмолинская/{crop_group}/{metric}: итоговая строка по области не найдена")
                 break
 
             # См. подробный комментарий про is_subblock_boundary в
@@ -535,7 +535,7 @@ def detect_and_drop_unit_breaks(long_df: pd.DataFrame, ratio_threshold: float = 
         long_df = long_df[long_df.apply(keep_row, axis=1)]
 
     if dropped_info:
-        print("  ⚠️  Обнаружен устойчивый скачок масштаба (похоже на смену единицы")
+        print("   Обнаружен устойчивый скачок масштаба (похоже на смену единицы")
         print("      измерения в самом источнике) — годы до скачка отброшены как")
         print("      ненадёжные вместо того, чтобы оставить неверный порядок величины:")
         for region, crop, metric, y_before, y_after in dropped_info:
@@ -617,7 +617,7 @@ def try_load_manual_file() -> pd.DataFrame:
     for name in ("stat_gov_kz_crops.xlsx", "stat_gov_kz_crops.csv"):
         path = os.path.join(INPUT_DIR, name)
         if os.path.exists(path):
-            print(f"  ✅ Найден ручной файл: {path} (имеет приоритет над автозагрузкой)")
+            print(f"  Найден ручной файл: {path} (имеет приоритет над автозагрузкой)")
             df = pd.read_excel(path) if path.endswith(".xlsx") else pd.read_csv(path, encoding="utf-8-sig")
             df["source"] = "stat_gov_kz_manual_upload"
             return df
@@ -646,7 +646,7 @@ def process_akmola(include_districts: bool = False) -> pd.DataFrame:
     if not crop_part.empty:
         wide_parts.append(long_to_wide(detect_and_drop_unit_breaks(crop_part), "stat_gov_kz_real"))
         found_crops = sorted(crop_part["crop"].unique())
-        print(f"    ℹ️  Найдена районная разбивка по отдельным культурам внутри группы: {found_crops}")
+        print(f"     Найдена районная разбивка по отдельным культурам внутри группы: {found_crops}")
 
     if not wide_parts:
         return pd.DataFrame()
@@ -667,7 +667,7 @@ def main():
     if not df_manual.empty:
         out_path = os.path.join(OUTPUT_DIR, "05_kaz_stat.csv")
         df_manual.to_csv(out_path, index=False, encoding="utf-8-sig")
-        print(f"  💾 Сохранено (ручная загрузка): {out_path} ({len(df_manual)} строк)")
+        print(f"  Сохранено (ручная загрузка): {out_path} ({len(df_manual)} строк)")
         return
 
     all_frames = []
@@ -678,20 +678,20 @@ def main():
             wide = long_to_wide(long_df, "stat_gov_kz_real")
             if not wide.empty:
                 all_frames.append(wide)
-                print(f"    ✅ {len(wide)} строк, культуры: {sorted(wide['crop'].unique())}")
+                print(f"    {len(wide)} строк, культуры: {sorted(wide['crop'].unique())}")
             else:
-                print(f"    ❌ Не удалось распарсить данные")
+                print(f"    Не удалось распарсить данные")
 
         print(f"\n  [{AKMOLA_REGION}] скачивание и парсинг (группы + встроенные культуры)...")
         wide_akmola = process_akmola()
         if not wide_akmola.empty:
             all_frames.append(wide_akmola)
-            print(f"    ✅ {len(wide_akmola)} строк, культуры/группы: {sorted(wide_akmola['crop'].unique())}")
+            print(f"    {len(wide_akmola)} строк, культуры/группы: {sorted(wide_akmola['crop'].unique())}")
         else:
-            print(f"    ❌ Не удалось распарсить данные")
+            print(f"    Не удалось распарсить данные")
 
     except requests.exceptions.RequestException as e:
-        print(f"\n  ❌ Сеть/сайт недоступны: {e}")
+        print(f"\n  Сеть/сайт недоступны: {e}")
         all_frames = []
 
     if all_frames:
@@ -700,16 +700,16 @@ def main():
         out_path = os.path.join(OUTPUT_DIR, "05_kaz_stat.csv")
         result.to_csv(out_path, index=False, encoding="utf-8-sig")
         print(f"\n  {'='*50}")
-        print(f"  💾 Сохранено (реальные данные): {out_path}")
+        print(f"  Сохранено (реальные данные): {out_path}")
         print(f"  Строк: {len(result)}, период: {result['year'].min()}–{result['year'].max()}")
         print(f"  Регионы: {result['region'].unique().tolist()}")
     else:
-        print("\n  ⚠️  Реальные данные недоступны — переход на синтетический fallback.")
+        print("\n   Реальные данные недоступны — переход на синтетический fallback.")
         df_synth = generate_synthetic_kaz(2000, 2025)
         out_path = os.path.join(OUTPUT_DIR, "05_kaz_stat.csv")
         df_synth.to_csv(out_path, index=False, encoding="utf-8-sig")
-        print(f"  💾 Синтетические данные (FALLBACK): {out_path} ({len(df_synth)} строк)")
-        print(f"  ⚠️  Это НЕ реальная статистика — замените, когда сайт снова станет доступен.")
+        print(f"  Синтетические данные (FALLBACK): {out_path} ({len(df_synth)} строк)")
+        print(f"   Это НЕ реальная статистика — замените, когда сайт снова станет доступен.")
         return
 
     build_district_level()
@@ -741,24 +741,24 @@ def build_district_level():
         if not wide.empty:
             frames.append(wide)
             n_districts = wide["district"].nunique()
-            print(f"    ✅ {len(wide)} строк, районов: {n_districts}")
+            print(f"    {len(wide)} строк, районов: {n_districts}")
 
     print(f"\n  [{AKMOLA_REGION}] районы (группы + встроенные культуры)...")
     wide_akmola = process_akmola(include_districts=True)
     if not wide_akmola.empty:
         frames.append(wide_akmola)
-        print(f"    ✅ {len(wide_akmola)} строк, районов: {wide_akmola['district'].nunique()}, "
+        print(f"    {len(wide_akmola)} строк, районов: {wide_akmola['district'].nunique()}, "
               f"культуры/группы: {sorted(wide_akmola['crop'].unique())}")
 
     if not frames:
-        print("\n  ❌ Районные данные не собраны.")
+        print("\n  Районные данные не собраны.")
         return
 
     result = pd.concat(frames, ignore_index=True)
     result = result.sort_values(["region", "district", "crop", "year"]).reset_index(drop=True)
     out_path = os.path.join(OUTPUT_DIR, "05_kaz_stat_districts.csv")
     result.to_csv(out_path, index=False, encoding="utf-8-sig")
-    print(f"\n  💾 Сохранено: {out_path}")
+    print(f"\n  Сохранено: {out_path}")
     print(f"  Строк: {len(result)}, районов всего: {result['district'].nunique()}")
     print(f"  Из них 'Область (итого)' — сводная строка, дублирует 05_kaz_stat.csv,")
     print(f"  оставлена для удобства сравнения район vs область в одном файле.")
@@ -793,11 +793,11 @@ def validate_district_sums(result: pd.DataFrame, tolerance: float = 0.02):
 
     print(f"\n  Кросс-проверка сумма(районы) == область: {checked} групп (year×crop×region) проверено")
     if mismatches:
-        print(f"  ⚠️  Расхождение >2% в {len(mismatches)} группах (первые 10):")
+        print(f"   Расхождение >2% в {len(mismatches)} группах (первые 10):")
         for region, crop, year, oblast_val, districts_sum, rel_diff in mismatches[:10]:
             print(f"    {region}/{crop}/{year}: область={oblast_val:.0f}, сумма районов={districts_sum:.0f} ({rel_diff:.1%})")
     else:
-        print(f"  ✅ Все проверенные группы совпадают с допуском {tolerance:.0%} — районные данные согласованы с областными.")
+        print(f"  Все проверенные группы совпадают с допуском {tolerance:.0%} — районные данные согласованы с областными.")
 
 
 if __name__ == "__main__":

@@ -111,12 +111,12 @@ def main():
     cmp_df = build_comparison(regional, nat_prod, nat_area)
 
     if cmp_df.empty:
-        print("  ❌ Нет пересекающихся лет/культур для сравнения.")
+        print("  Нет пересекающихся лет/культур для сравнения.")
         return
 
     out_path = os.path.join(OUTPUT_DIR, "07_validation_report.csv")
     cmp_df.to_csv(out_path, index=False, encoding="utf-8-sig")
-    print(f"\n  💾 Полный отчёт: {out_path} ({len(cmp_df)} строк)")
+    print(f"\n  Полный отчёт: {out_path} ({len(cmp_df)} строк)")
 
     print("\n  Доля региональных данных (Акмолинская+Костанайская+СКО) от")
     print("  национального FAOSTAT — по культуре (production_share):")
@@ -139,11 +139,11 @@ def main():
 
     print(f"\n  {'='*66}")
     if flags:
-        print("  ⚠️  НАЙДЕНЫ АНОМАЛИИ, требуют ручной проверки:")
+        print("   НАЙДЕНЫ АНОМАЛИИ, требуют ручной проверки:")
         for f in flags:
             print(f"    - {f}")
     else:
-        print("  ✅ Аномалий не найдено: доля региональных данных от национального")
+        print("  Аномалий не найдено: доля региональных данных от национального")
         print("     итога нигде не превышает 100% и остаётся стабильной год к году.")
         print("     Данные 05 (stat.gov.kz) и 01 (FAOSTAT) взаимно непротиворечивы —")
         print("     кросс-валидация между двумя независимыми источниками пройдена.")

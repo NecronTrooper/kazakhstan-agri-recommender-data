@@ -79,12 +79,12 @@ def verify_url() -> bool:
     try:
         resp = requests.head(PINK_SHEET_URL, timeout=15, allow_redirects=True)
         if resp.status_code < 400:
-            print(f"  ✅ Pink Sheet доступен (HTTP {resp.status_code})")
+            print(f"  Pink Sheet доступен (HTTP {resp.status_code})")
             return True
-        print(f"  ❌ HTTP {resp.status_code}")
+        print(f"  HTTP {resp.status_code}")
         return False
     except requests.exceptions.RequestException as e:
-        print(f"  ❌ Недоступен: {e}")
+        print(f"  Недоступен: {e}")
         return False
 
 
@@ -111,8 +111,8 @@ def validate_columns(raw: pd.DataFrame) -> bool:
             kw in actual.lower()
             for kw in col_name.split("_")[:2]  # первые два слова имени
         )
-        status = "✅" if key_check else "⚠️ "
-        print(f"  {status} col {col_idx:2d}: '{actual}' {unit} → {col_name}")
+        status = "OK" if key_check else "MISMATCH"
+        print(f"  [{status:8s}] col {col_idx:2d}: '{actual}' {unit} → {col_name}")
         if not key_check:
             all_ok = False
     return all_ok
@@ -212,7 +212,7 @@ def main():
     # Проверяем структуру
     ok = validate_columns(raw)
     if not ok:
-        print("\n  ⚠️  Некоторые колонки не прошли проверку.")
+        print("\n   Некоторые колонки не прошли проверку.")
         print("  World Bank мог изменить структуру файла — сверьте вывод validate_columns()")
         print("  выше (фактическое название/юнит в столбце) с COLUMN_MAP в начале скрипта")
         print("  и обновите номера столбцов вручную.")
@@ -223,19 +223,19 @@ def main():
     print(f"  Получено {len(df_monthly)} месячных записей")
 
     if df_monthly.empty:
-        print("  ❌ Данные не получены.")
+        print("  Данные не получены.")
         return
 
     # Сохраняем месячные
     monthly_path = os.path.join(OUTPUT_DIR, "02_prices_monthly.csv")
     df_monthly.to_csv(monthly_path, index=False, encoding="utf-8-sig")
-    print(f"  💾 Месячные: {monthly_path}")
+    print(f"  Месячные: {monthly_path}")
 
     # Агрегируем по годам
     df_annual = aggregate_annual(df_monthly)
     annual_path = os.path.join(OUTPUT_DIR, "02_worldbank_prices.csv")
     df_annual.to_csv(annual_path, index=False, encoding="utf-8-sig")
-    print(f"  💾 Годовые:  {annual_path}")
+    print(f"  Годовые:  {annual_path}")
 
     print_summary(df_monthly, df_annual)
 

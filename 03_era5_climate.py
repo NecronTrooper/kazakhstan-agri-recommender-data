@@ -76,7 +76,7 @@ def download_year(client, year: int, nc_path: str) -> bool:
         client.retrieve(DATASET, request, nc_path)
         return True
     except Exception as e:
-        print(f"    ❌ Ошибка {year}: {e}")
+        print(f"    Ошибка {year}: {e}")
         # Удаляем битый файл если он создался
         if os.path.exists(nc_path) and os.path.getsize(nc_path) < 1000:
             os.remove(nc_path)
@@ -185,7 +185,7 @@ def collect_all_years() -> pd.DataFrame:
     try:
         import cdsapi
     except ImportError:
-        print("  ❌ Установите: pip install cdsapi")
+        print("  Установите: pip install cdsapi")
         return pd.DataFrame()
 
     client = cdsapi.Client()
@@ -203,13 +203,13 @@ def collect_all_years() -> pd.DataFrame:
 
         # Пропускаем если файл уже есть и не пустой
         if os.path.exists(nc_path) and os.path.getsize(nc_path) > 10_000:
-            print(f"  [{i+1:2d}/{total}] {year} — уже скачан ✓", end="")
+            print(f"  [{i+1:2d}/{total}] {year} — уже скачан ", end="")
             try:
                 df_year = nc_to_df(nc_path, year)
                 all_frames.append(df_year)
                 print(f" ({len(df_year)} строк)")
             except Exception as e:
-                print(f" ⚠️  ошибка чтения: {e}, перескачиваем...")
+                print(f"  ошибка чтения: {e}, перескачиваем...")
                 os.remove(nc_path)
                 failed_years.append(year)
             continue
@@ -222,12 +222,12 @@ def collect_all_years() -> pd.DataFrame:
                 df_year = nc_to_df(nc_path, year)
                 all_frames.append(df_year)
                 size_kb = os.path.getsize(nc_path) / 1024
-                print(f" ✅ {size_kb:.0f} КБ, {len(df_year)} строк")
+                print(f" {size_kb:.0f} КБ, {len(df_year)} строк")
             except Exception as e:
-                print(f" ⚠️  ошибка чтения NC: {e}")
+                print(f"  ошибка чтения NC: {e}")
                 failed_years.append(year)
         else:
-            print(f" ❌ пропущен")
+            print(f" пропущен")
             failed_years.append(year)
 
         # Небольшая пауза между запросами
@@ -235,7 +235,7 @@ def collect_all_years() -> pd.DataFrame:
             time.sleep(2)
 
     if failed_years:
-        print(f"\n  ⚠️  Не удалось скачать годы: {failed_years}")
+        print(f"\n   Не удалось скачать годы: {failed_years}")
         print(f"  Повторно запустите скрипт — они будут скачаны автоматически.")
 
     if all_frames:
@@ -276,7 +276,7 @@ def generate_synthetic(csv_path: str) -> pd.DataFrame:
 
     df = pd.DataFrame(records)
     df.to_csv(csv_path, index=False, encoding="utf-8-sig")
-    print(f"  💾 Синтетика: {csv_path} ({len(df)} строк)")
+    print(f"  Синтетика: {csv_path} ({len(df)} строк)")
     return df
 
 
@@ -293,7 +293,7 @@ def aggregate_growing_season(df: pd.DataFrame, out_path: str):
     annual.columns = ["year"] + [f"gs_{c}" for c in num_cols]
     annual["source"] = df["source"].iloc[0] + "_gs"
     annual.to_csv(out_path, index=False, encoding="utf-8-sig")
-    print(f"  💾 Вегетационный сезон: {out_path} ({len(annual)} лет)")
+    print(f"  Вегетационный сезон: {out_path} ({len(annual)} лет)")
     return annual
 
 
@@ -303,26 +303,26 @@ def aggregate_growing_season(df: pd.DataFrame, out_path: str):
 
 def check_config() -> bool:
     if os.environ.get("CDSAPI_KEY") and os.environ.get("CDSAPI_URL"):
-        print("  ✅ Конфигурация: переменные окружения")
+        print("  Конфигурация: переменные окружения")
         return True
     rc = os.path.join(os.path.expanduser("~"), ".cdsapirc")
     setup_hint = "см. README.md, раздел \"Настройка ERA5 (Скрипт 03)\""
     if not os.path.exists(rc):
-        print(f"  ❌ Файл не найден: {rc}")
+        print(f"  Файл не найден: {rc}")
         print(f"     {setup_hint}")
         return False
     with open(rc, encoding="utf-8") as f:
         content = f.read()
     if "cds.climate.copernicus.eu/api" not in content or "key:" not in content:
-        print(f"  ❌ Неверный формат .cdsapirc — {setup_hint}")
+        print(f"  Неверный формат .cdsapirc — {setup_hint}")
         return False
     for line in content.splitlines():
         if line.strip().startswith("key:"):
             token = line.split(":", 1)[1].strip()
             if token in ("", "<PERSONAL-ACCESS-TOKEN>", "ВАШ-ТОКЕН-ЗДЕСЬ"):
-                print(f"  ❌ Токен не заполнен — {setup_hint}")
+                print(f"  Токен не заполнен — {setup_hint}")
                 return False
-    print(f"  ✅ ~/.cdsapirc настроен корректно")
+    print(f"  ~/.cdsapirc настроен корректно")
     return True
 
 
@@ -351,7 +351,7 @@ def clear_bad_cache():
             os.remove(fpath)
             cleared += 1
     if cleared:
-        print(f"  🗑️  Удалено {cleared} повреждённых файлов кэша")
+        print(f"   Удалено {cleared} повреждённых файлов кэша")
 
 
 def main():
@@ -377,19 +377,19 @@ def main():
             df = collect_all_years()
             if not df.empty:
                 df.to_csv(monthly_csv, index=False, encoding="utf-8-sig")
-                print(f"\n  💾 Месячные данные: {monthly_csv} ({len(df)} строк)")
+                print(f"\n  Месячные данные: {monthly_csv} ({len(df)} строк)")
                 gs = aggregate_growing_season(df, gs_csv)
-                print(f"\n  ✅ Готово! Период: {df['year'].min()}–{df['year'].max()}")
+                print(f"\n  Готово! Период: {df['year'].min()}–{df['year'].max()}")
             else:
-                print("  ❌ Данные не получены, переключение на синтетику...")
+                print("  Данные не получены, переключение на синтетику...")
                 df_s = generate_synthetic(synth_csv)
                 aggregate_growing_season(df_s, synth_gs)
         except KeyboardInterrupt:
-            print("\n\n  ⏸️  Прервано пользователем.")
+            print("\n\n   Прервано пользователем.")
             print(f"  Уже скачанные годы сохранены в: {CACHE_DIR}")
             print(f"  Повторно запустите скрипт — продолжит с места остановки.")
         except Exception as e:
-            print(f"  ❌ Ошибка: {e}")
+            print(f"  Ошибка: {e}")
             print("  Переключение на синтетические данные...")
             df_s = generate_synthetic(synth_csv)
             aggregate_growing_season(df_s, synth_gs)

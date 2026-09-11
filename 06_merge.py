@@ -57,16 +57,16 @@ def load_production() -> pd.DataFrame:
         df = df[df["crop"].isin(CROP_MAP_RU_EN.keys())].copy()
         df["crop_en"] = df["crop"].map(CROP_MAP_RU_EN)
         sources = df["source"].unique().tolist()
-        print(f"  ✅ Производство (05_kaz_stat.csv): {len(df)} строк, source={sources}")
+        print(f"  Производство (05_kaz_stat.csv): {len(df)} строк, source={sources}")
         if any(str(s).endswith("FALLBACK_SYNTHETIC") for s in sources):
-            print("  ⚠️  ВНИМАНИЕ: часть/все данные — синтетический fallback, не реальная статистика!")
+            print("   ВНИМАНИЕ: часть/все данные — синтетический fallback, не реальная статистика!")
         return df
     elif os.path.exists(fao_path):
         df = pd.read_csv(fao_path)
-        print(f"  ✅ Производство (FAOSTAT, национальный уровень, БЕЗ регионов): {len(df)} строк")
+        print(f"  Производство (FAOSTAT, национальный уровень, БЕЗ регионов): {len(df)} строк")
         return df
     else:
-        print("  ⚠️  Файлы производства не найдены — запустите 01_faostat.py и/или 05_kaz_stat.py")
+        print("   Файлы производства не найдены — запустите 01_faostat.py и/или 05_kaz_stat.py")
         return pd.DataFrame()
 
 
@@ -74,7 +74,7 @@ def load_prices() -> pd.DataFrame:
     """Загружает мировые цены (World Bank Pink Sheet)."""
     path = os.path.join(OUTPUT_DIR, "02_worldbank_prices.csv")
     if not os.path.exists(path):
-        print("  ⚠️  Файл цен не найден — запустите 02_worldbank_prices.py")
+        print("   Файл цен не найден — запустите 02_worldbank_prices.py")
         return pd.DataFrame()
 
     df = pd.read_csv(path)
@@ -83,7 +83,7 @@ def load_prices() -> pd.DataFrame:
     df["year"] = df["year"].astype(int)
     # Агрегируем по году (среднегодовые)
     df = df.groupby("year")[price_cols].mean().reset_index()
-    print(f"  ✅ Цены (Pink Sheet): {len(df)} лет, {len(price_cols)} товаров")
+    print(f"  Цены (Pink Sheet): {len(df)} лет, {len(price_cols)} товаров")
     return df
 
 
@@ -105,9 +105,9 @@ def load_climate() -> pd.DataFrame:
                 ]
             else:
                 annual = df.groupby("year").mean(numeric_only=True).reset_index()
-            print(f"  ✅ Климат ({fname}): {len(annual)} лет")
+            print(f"  Климат ({fname}): {len(annual)} лет")
             return annual
-    print("  ⚠️  Файл климата не найден — запустите 03_era5_climate.py")
+    print("   Файл климата не найден — запустите 03_era5_climate.py")
     return pd.DataFrame()
 
 
@@ -115,7 +115,7 @@ def load_soil() -> pd.DataFrame:
     """Загружает почвенные данные SoilGrids."""
     path = os.path.join(OUTPUT_DIR, "04_soilgrids_wide.csv")
     if not os.path.exists(path):
-        print("  ⚠️  Почвенные данные не найдены — запустите 04_soilgrids.py")
+        print("   Почвенные данные не найдены — запустите 04_soilgrids.py")
         return pd.DataFrame()
 
     df = pd.read_csv(path)
@@ -124,7 +124,7 @@ def load_soil() -> pd.DataFrame:
     soil_cols = [c for c in top_layer.columns
                  if c not in ["lat", "lon", "depth", "source"]]
     soil_mean = top_layer[soil_cols].mean()
-    print(f"  ✅ Почва (SoilGrids): {len(soil_cols)} свойств")
+    print(f"  Почва (SoilGrids): {len(soil_cols)} свойств")
     return soil_mean
 
 
@@ -178,7 +178,7 @@ def merge_all() -> pd.DataFrame:
     soil   = load_soil()
 
     if prod.empty:
-        print("  ❌ Нет производственных данных. Прерывание.")
+        print("  Нет производственных данных. Прерывание.")
         return pd.DataFrame()
 
     master = prod.copy()
@@ -234,7 +234,7 @@ def main():
     master.to_csv(MASTER_PATH, index=False, encoding="utf-8-sig")
 
     print(f"\n  {'='*45}")
-    print(f"  💾 Итоговый датасет: {MASTER_PATH}")
+    print(f"  Итоговый датасет: {MASTER_PATH}")
     print(f"  Строк:    {len(master)}")
     print(f"  Столбцов: {len(master.columns)}")
     print(f"  Период:   {master['year'].min()}–{master['year'].max()}")

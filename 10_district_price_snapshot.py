@@ -1,7 +1,7 @@
 """
 Скрипт 10 — Районный снимок "урожай × текущая цена"
 =======================================================
-⚠️ ЭТО ИЛЛЮСТРАТИВНЫЙ ДЕМО-АРТЕФАКТ, НЕ КОМПОНЕНТ МЕТОДОЛОГИИ. ⚠️
+ЭТО ИЛЛЮСТРАТИВНЫЙ ДЕМО-АРТЕФАКТ, НЕ КОМПОНЕНТ МЕТОДОЛОГИИ. 
 Решение от 2026-09-10 (см. README, раздел "Методологическая позиция:
 районные данные (05) vs цена (08/09)"): для диссертации/статьи 05 и
 08/09 остаются ДВУМЯ НЕЗАВИСИМЫМИ слоями до накопления у 08/09 истории
@@ -130,7 +130,7 @@ def main():
     prices = load_latest_week_prices()
 
     if prices.empty:
-        print("  ❌ Нет ценовых данных — запустите 08_grainunion_prices.py")
+        print("  Нет ценовых данных — запустите 08_grainunion_prices.py")
         return
 
     snapshot = districts.merge(prices, on="crop", how="left")
@@ -145,7 +145,7 @@ def main():
     snapshot.to_csv(OUT_CSV, index=False, encoding="utf-8-sig")
 
     n_with_price = snapshot["domestic_usd_per_t"].notna().sum()
-    print(f"\n  💾 Сохранено: {OUT_CSV}")
+    print(f"\n  Сохранено: {OUT_CSV}")
     print(f"  Строк: {len(snapshot)} (год урожая={latest_year}), из них с ценой: {n_with_price}")
     print(f"  Культуры без цены в 08 (площадь/урожай сохранены, price-колонки = NaN):")
     no_price_crops = sorted(snapshot.loc[snapshot.domestic_usd_per_t.isna(), "crop"].unique())
@@ -156,7 +156,7 @@ def main():
         print(f"\n  Топ-5 районов по потенциальному выигрышу от экспорта (USD, на текущий урожай):")
         print(top[["region", "district", "crop", "production_ton", "export_uplift_usd"]].to_string(index=False))
 
-    print(f"\n  ⚠️  НАПОМИНАНИЕ: год урожая ({latest_year}) и неделя цены")
+    print(f"\n   НАПОМИНАНИЕ: год урожая ({latest_year}) и неделя цены")
     print(f"  ({prices.price_week_date_from.iloc[0]}) — РАЗНЫЕ периоды, это намеренный")
     print(f"  'здесь и сейчас' снимок, а не исторический факт про {latest_year} год.")
     print(f"  При каждом новом прогоне 05/08 обе точки отсчёта сдвигаются — файл")
