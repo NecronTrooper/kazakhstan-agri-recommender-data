@@ -60,8 +60,18 @@ for lat in [50.0, 51.5, 53.0, 54.5]:
         SAMPLE_POINTS.append({"lat": lat, "lon": lon})
 
 
-def fetch_soilgrids_point(lat: float, lon: float) -> dict:
-    """Запрос свойств почвы в одной точке."""
+def fetch_soilgrids_point(lat: float, lon: float, retries: int = 3) -> dict:
+    """
+    Запрос свойств почвы в одной точке, с повтором при сбое.
+
+    Обнаружено 2026-09-11: REST API SoilGrids временами роняет отдельные
+    запросы (таймаут/5xx) без видимой системной причины — без повтора
+    это делает состав точек с данными НЕДЕТЕРМИНИРОВАННЫМ от запуска к
+    запуску (одна точка случайно выпадает, другая случайно попадает),
+    что подрывает воспроизводимость архивируемого датасета. Повтор с
+    задержкой, кратной интервалу rate limit (13 сек/запрос, см.
+    collect_soilgrids), решает это для транзиентных сбоев.
+    """
     params = {
         "lon": lon,
         "lat": lat,
@@ -70,9 +80,19 @@ def fetch_soilgrids_point(lat: float, lon: float) -> dict:
         "value": ["mean"],
     }
 
-    resp = requests.get(API_BASE, params=params, timeout=30)
-    resp.raise_for_status()
-    return resp.json()
+    last_exc = None
+    for attempt in range(1, retries + 1):
+        try:
+            resp = requests.get(API_BASE, params=params, timeout=30)
+            resp.raise_for_status()
+            return resp.json()
+        except (requests.exceptions.RequestException,) as e:
+            last_exc = e
+            if attempt < retries:
+                wait = 13 * attempt
+                print(f"    попытка {attempt}/{retries} не удалась ({e}), повтор через {wait}с...")
+                time.sleep(wait)
+    raise last_exc
 
 
 def parse_soilgrids_response(data: dict, lat: float, lon: float) -> list:
