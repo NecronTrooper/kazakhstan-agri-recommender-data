@@ -25,6 +25,10 @@ keywords:
   - commodity prices
   - recommender system
   - data descriptor
-license:
-  - MIT
-  - CC-BY-4.0
+license: CC-BY-4.0
+# Примечание: license здесь — единственное значение (список Zenodo не
+# принимает, хотя спецификация CFF формально это разрешает — известный
+# баг после их миграции, см. github.com/zenodo/zenodo issue #2515,
+# найдено 2026-09-14 при "Citation metadata load failed").
+# Датасет (output/*.csv) — CC-BY-4.0, код (*.py) отдельно — MIT,
+# см. LICENSE и DATA_LICENSE.md за полной картиной.
