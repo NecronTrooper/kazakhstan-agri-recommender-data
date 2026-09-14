@@ -2,14 +2,19 @@ cff-version: 1.2.0
 message: "Если вы используете этот пайплайн сбора данных или собранный датасет, пожалуйста, цитируйте его следующим образом."
 title: "Kazakhstan Agri Recommender — Data Collection Pipeline"
 type: dataset
-version: 1.0.0
-date-released: "2026-09-10"
+version: 1.0.1
+date-released: "2026-09-14"
+doi: 10.5281/zenodo.22748048
 authors:
   - family-names: "Kumarov"
     given-names: "Akezhan"
     # affiliation: "УКАЗАТЬ ВУЗ" — заполнить при наличии
     # orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX" — заполнить при наличии
 repository-code: "https://github.com/NecronTrooper/kazakhstan-agri-recommender-data"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22748048
+    description: "Архивная версия v1.0.1 на Zenodo (DOI постоянной ссылки)"
 abstract: >
   Пайплайн сбора данных для рекомендательной системы аграриям Казахстана:
   производство сельхозкультур (FAOSTAT, stat.gov.kz — областной и
