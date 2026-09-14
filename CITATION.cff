@@ -8,7 +8,13 @@ doi: 10.5281/zenodo.22748048
 authors:
   - family-names: "Kumarov"
     given-names: "Akezhan"
-    # affiliation: "УКАЗАТЬ ВУЗ" — заполнить при наличии
+    affiliation: "School of Software Engineering, Astana IT University"
+    email: "255662@astanait.edu.kz"
+    # orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX" — заполнить при наличии
+  - family-names: "Kashkimbayeva"
+    given-names: "Nurzhamal"
+    affiliation: "School of Software Engineering, Astana IT University"
+    email: "n.kashkimbayeva@astanait.edu.kz"
     # orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX" — заполнить при наличии
 repository-code: "https://github.com/NecronTrooper/kazakhstan-agri-recommender-data"
 identifiers:
