@@ -10,12 +10,12 @@ authors:
     given-names: "Akezhan"
     affiliation: "School of Software Engineering, Astana IT University"
     email: "255662@astanait.edu.kz"
-    # orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX" — заполнить при наличии
+    orcid: "https://orcid.org/0009-0006-5674-2929"
   - family-names: "Kashkimbayeva"
     given-names: "Nurzhamal"
     affiliation: "School of Software Engineering, Astana IT University"
     email: "n.kashkimbayeva@astanait.edu.kz"
-    # orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX" — заполнить при наличии
+    orcid: "https://orcid.org/0000-0002-6070-876X"
 repository-code: "https://github.com/NecronTrooper/kazakhstan-agri-recommender-data"
 identifiers:
   - type: doi

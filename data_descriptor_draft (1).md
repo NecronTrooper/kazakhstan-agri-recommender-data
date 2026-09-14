@@ -1,6 +1,6 @@
 # A Multi-Source Dataset Integrating Crop Production, Climate, Soil, and Market Prices for Northern Kazakhstan's Grain Belt (1990–2025)
 
-**Authors:** Akezhan Kumarov ¹\*, Nurzhamal Kashkimbayeva ¹
+**Authors:** Akezhan Kumarov ¹\* [ORCID: 0009-0006-5674-2929], Nurzhamal Kashkimbayeva ¹ [ORCID: 0000-0002-6070-876X]
 
 ¹ School of Software Engineering, Astana IT University, Astana, Kazakhstan
 
@@ -166,7 +166,7 @@ Conceptualization, A.K. and N.K.; methodology, data curation, software, validati
 
 ## Funding
 
-*[To be completed — state any funding source, or "This research received no external funding."]*
+This research received no external funding.
 
 ## Acknowledgements
 
