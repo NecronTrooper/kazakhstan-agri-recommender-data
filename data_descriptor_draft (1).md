@@ -14,7 +14,7 @@
 
 *(target: ≤170 words, no citations, no claims of novel findings)*
 
-Data-driven decision support for grain producers requires integrating production statistics, climate, soil, and market data that are typically scattered across incompatible national and international sources. We present a compiled, cross-validated dataset for Kazakhstan's northern grain belt (Akmola, Kostanay, and North Kazakhstan regions), combining regional crop production statistics (1990–2025) from the national statistics agency with national-level FAOSTAT records, ERA5-Land climate reanalysis, ISRIC SoilGrids soil properties, World Bank commodity prices, and weekly domestic grain-market bulletins collected since May 2026. The dataset comprises a merged analysis-ready table (382 rows × 44 columns) together with ten intermediate and derived files, including a district-level breakdown (57 districts, 6,067 rows) and an independent cross-validation of regional totals against national statistics. Three data-quality issues discovered during compilation — an incorrect country code, an unapplied unit-conversion factor, and an unconverted cumulative climate variable — are documented and corrected. All scripts, validation routines, and licensing terms are openly available, enabling reuse for yield-forecasting and agricultural recommendation research in Kazakhstan and comparable grain-producing regions.
+Data-driven decision support for grain producers requires integrating production, climate, soil, and market data, typically scattered across incompatible national and international sources. We present a compiled, cross-validated dataset for Kazakhstan's northern grain belt (Akmola, Kostanay, and North Kazakhstan regions), combining regional crop production statistics (1990–2025) from the national statistics agency with FAOSTAT, ERA5-Land climate reanalysis, ISRIC SoilGrids soil properties, World Bank commodity prices, and weekly domestic market bulletins collected since May 2026. The dataset comprises a merged analysis-ready table (382 rows × 44 columns) and ten intermediate and derived files, including a district-level breakdown (57 districts, 6,067 rows) and an independent cross-validation of regional against national totals. Three data-quality issues found during compilation — an incorrect country code, an unapplied unit-conversion factor, and an unconverted cumulative climate variable — are documented and corrected. All scripts, validation routines, and licensing terms are openly available, supporting yield-forecasting and recommendation research in Kazakhstan and comparable grain-producing regions.
 
 ---
 
@@ -144,7 +144,7 @@ Two additional issues affecting the district-level file were identified and corr
 
 **Regional coverage gaps.** Rapeseed is not published at the regional level by any of the three target regions and is available only via national FAOSTAT figures. Barley and maize for Akmola region are available only as part of an aggregate crop group, not as individual crops, reflecting a genuine limitation of the source rather than the collection methodology.
 
-**Licensing.** The compiled dataset (selection of sources, cleaning, merging, and derived features) is licensed under CC BY 4.0. Several primary sources carry their own terms that remain in force independently of this compilation license, most notably FAOSTAT, which is typically distributed under a non-commercial license (CC BY-NC-SA 3.0 IGO); users intending commercial reuse of the FAOSTAT-derived columns specifically should verify current terms directly with FAO before proceeding. A full source-by-source licensing table is provided in the repository's `DATA_LICENSE.md`.
+**Licensing.** The compiled dataset (selection of sources, cleaning, merging, and derived features) is licensed under CC BY 4.0. Primary sources carry their own terms that remain in force independently of this compilation license. FAOSTAT data is licensed under CC BY 4.0 as of FAO's Open Data Licensing for Statistical Databases Policy 2025 (superseding an earlier, more restrictive 2020 policy; verified 14 September 2026), consistent with this dataset's overall license; re-dissemination should still carry FAO's own attribution line ("FAO. [year]. [dataset]. [access date]. [URL] Licence: CC-BY-4.0."). Other sources (Copernicus/ECMWF, ISRIC SoilGrids, the Bureau of National Statistics of Kazakhstan, and the Grain Union of Kazakhstan) carry their own attribution terms, summarized with source and verification date in the repository's `DATA_LICENSE.md`.
 
 ---
 
@@ -182,12 +182,12 @@ The authors declare no conflict of interest.
 
 *(Data Descriptor references are typically limited to the primary data sources and closely related dataset papers; the reference list below is a starting point and should be finalized against the target journal's citation style.)*
 
-1. FAO. FAOSTAT Statistical Database. Food and Agriculture Organization of the United Nations, Rome. Available online: https://www.fao.org/faostat (accessed on [date]).
-2. World Bank. Commodity Markets ("Pink Sheet"). World Bank Group. Available online: https://www.worldbank.org/en/research/commodity-markets (accessed on [date]).
+1. FAO. FAOSTAT Statistical Database. Food and Agriculture Organization of the United Nations, Rome. Available online: https://www.fao.org/faostat (accessed on 14 September 2026).
+2. World Bank. Commodity Markets ("Pink Sheet"). World Bank Group. Available online: https://www.worldbank.org/en/research/commodity-markets (accessed on 14 September 2026).
 3. Muñoz Sabater, J. ERA5-Land Monthly Averaged Data from 1950 to Present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). https://doi.org/10.24381/cds.68d2bb30
 4. Poggio, L.; de Sousa, L.M.; Batjes, N.H.; et al. SoilGrids 2.0: producing soil information for the globe with quantified spatial uncertainty. *SOIL* **2021**, *7*, 217–240.
-5. Bureau of National Statistics, Agency for Strategic Planning and Reforms of the Republic of Kazakhstan. Agriculture, Forestry and Fisheries Statistics. Available online: https://stat.gov.kz (accessed on [date]).
-6. Grain Union of Kazakhstan. Weekly Grain Market Price Review. Available online: https://grainunion.kz/ru/news/32 (accessed on [date]).
+5. Bureau of National Statistics, Agency for Strategic Planning and Reforms of the Republic of Kazakhstan. Agriculture, Forestry and Fisheries Statistics. Available online: https://stat.gov.kz (accessed on 14 September 2026).
+6. Grain Union of Kazakhstan. Weekly Grain Market Price Review. Available online: https://grainunion.kz/ru/news/32 (accessed on 14 September 2026).
 7. Kumarov, A.; Kashkimbayeva, N.; Kaibassova, D. Comparison of Machine Learning Models for Predicting Crop Yield and Market Prices. [Conference/venue, year — cross-reference to the companion empirical paper once accepted].
 
 ---
