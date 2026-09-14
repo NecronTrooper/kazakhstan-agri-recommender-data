@@ -8,6 +8,7 @@
 - [`Словарь_данных_output.md`](./Словарь_данных_output.md) — описание всех остальных файлов `output/`
 - [`LICENSE`](./LICENSE) (код, MIT) / [`DATA_LICENSE.md`](./DATA_LICENSE.md) (данные, CC BY 4.0 + условия первоисточников)
 - [`CITATION.cff`](./CITATION.cff) — как цитировать этот репозиторий
+- [`figures/`](./figures/) — фигуры для дескрипторной статьи (`make_figures.py` их строит из `output/*.csv`; PNG 300dpi + векторный PDF)
 
 ## Структура проекта
 
