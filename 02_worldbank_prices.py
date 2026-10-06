@@ -123,7 +123,6 @@ def parse_monthly(raw: pd.DataFrame) -> pd.DataFrame:
     data = raw.iloc[DATA_START:].copy().reset_index(drop=True)
 
     # Столбец 0 - период вида "1960M01"
-    period_series = data.iloc[:, 0].astype(str).str.strip()
 
     records = []
     for idx, row in data.iterrows():
