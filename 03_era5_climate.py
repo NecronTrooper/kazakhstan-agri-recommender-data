@@ -378,7 +378,7 @@ def main():
             if not df.empty:
                 df.to_csv(monthly_csv, index=False, encoding="utf-8-sig")
                 print(f"\n  Месячные данные: {monthly_csv} ({len(df)} строк)")
-                gs = aggregate_growing_season(df, gs_csv)
+                aggregate_growing_season(df, gs_csv)
                 print(f"\n  Готово! Период: {df['year'].min()}–{df['year'].max()}")
             else:
                 print("  Данные не получены, переключение на синтетику...")

@@ -24,19 +24,27 @@ identifiers:
 abstract: >
   Пайплайн сбора данных для рекомендательной системы аграриям Казахстана:
   производство сельхозкультур (FAOSTAT, stat.gov.kz — областной и
-  районный уровень), климат (ERA5-Land), почва (SoilGrids v2.0), мировые
-  цены (World Bank Pink Sheet) и внутренние цены зернового рынка
+  районный уровень), климат и почва на уровне районов (ERA5-Land,
+  SoilGrids v2.0, координаты районов из OpenStreetMap), мировые цены
+  (World Bank Pink Sheet), региональные цены производителей по областям
+  и культурам (stat.gov.kz, 2022–2025) и внутренние цены зернового рынка
   Казахстана (grainunion.kz), с независимой кросс-валидацией между
-  источниками.
+  источниками и автоматическими тестами данных.
 keywords:
   - agriculture
   - Kazakhstan
   - crop yield
   - remote sensing
   - commodity prices
+  - producer prices
+  - district-level data
   - recommender system
   - data descriptor
 license: CC-BY-4.0
+# ВАЖНО: поля version, date-released и doi выше относятся к опубликованной версии v1.0.1 (2026-09-14)
+# и в этой правке НЕ менялись. Абстракт и ключевые слова описывают текущее содержимое репозитория
+# (районные данные и региональные цены). После публикации новой версии на Zenodo обновите version,
+# date-released, doi и блок identifiers.
 # Примечание: license здесь — единственное значение (список Zenodo не
 # принимает, хотя спецификация CFF формально это разрешает — известный
 # баг после их миграции, см. github.com/zenodo/zenodo issue #2515,
