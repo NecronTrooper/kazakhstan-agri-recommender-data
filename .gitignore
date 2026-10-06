@@ -17,3 +17,17 @@ input/*.csv
 # уже отслеженных файлов, раздувает репозиторий без пользы
 figures.zip
 *.zip
+.coverage
+coverage.xml
+test-results.xml
+.ruff_cache/
+p16.log
+
+# Черновики статей и рукописи — не публикуем (ранее добавленные дескрипторы MDPI/DataInBrief отслеживаются явно)
+data_descriptor_*.pdf
+!data_descriptor_*.md
+data_descriptor_AstanaIT.md
+data_descriptor_Eurasian*.md
+data_descriptor_KSTU*.md
+data_descriptor_Vestnik*.md
+ieee_sist_paper*
