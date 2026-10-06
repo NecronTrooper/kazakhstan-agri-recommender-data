@@ -1,0 +1,205 @@
+﻿year,category,category_ru,index_eop_dec_to_dec_pct,index_avg_yoy_pct,source
+1992,agriculture_total,Продукция сельского хозяйства,,1031.7,stat_gov_kz_producer_price_index
+1993,agriculture_total,Продукция сельского хозяйства,931.1,775.7,stat_gov_kz_producer_price_index
+1994,agriculture_total,Продукция сельского хозяйства,1677.5,1888.3,stat_gov_kz_producer_price_index
+1995,agriculture_total,Продукция сельского хозяйства,216.5,256.8,stat_gov_kz_producer_price_index
+1996,agriculture_total,Продукция сельского хозяйства,122.7,160.9,stat_gov_kz_producer_price_index
+1997,agriculture_total,Продукция сельского хозяйства,105.9,109.6,stat_gov_kz_producer_price_index
+1998,agriculture_total,Продукция сельского хозяйства,94.6,92.2,stat_gov_kz_producer_price_index
+1999,agriculture_total,Продукция сельского хозяйства,124.8,108.3,stat_gov_kz_producer_price_index
+2000,agriculture_total,Продукция сельского хозяйства,124.9,133.3,stat_gov_kz_producer_price_index
+2001,agriculture_total,Продукция сельского хозяйства,108.3,118.9,stat_gov_kz_producer_price_index
+2002,agriculture_total,Продукция сельского хозяйства,97.7,100.1,stat_gov_kz_producer_price_index
+2003,agriculture_total,Продукция сельского хозяйства,131.7,106.3,stat_gov_kz_producer_price_index
+2004,agriculture_total,Продукция сельского хозяйства,104.0,127.1,stat_gov_kz_producer_price_index
+2005,agriculture_total,Продукция сельского хозяйства,100.4,101.4,stat_gov_kz_producer_price_index
+2006,agriculture_total,Продукция сельского хозяйства,109.5,101.2,stat_gov_kz_producer_price_index
+2007,agriculture_total,Продукция сельского хозяйства,139.1,120.3,stat_gov_kz_producer_price_index
+2008,agriculture_total,Продукция сельского хозяйства,119.3,139.4,stat_gov_kz_producer_price_index
+2009,agriculture_total,Продукция сельского хозяйства,87.3,103.1,stat_gov_kz_producer_price_index
+2010,agriculture_total,Продукция сельского хозяйства,123.4,93.3,stat_gov_kz_producer_price_index
+2011,agriculture_total,Продукция сельского хозяйства,98.3,127.6,stat_gov_kz_producer_price_index
+2012,agriculture_total,Продукция сельского хозяйства,122.4,96.2,stat_gov_kz_producer_price_index
+2013,agriculture_total,Продукция сельского хозяйства,93.0,115.5,stat_gov_kz_producer_price_index
+2014,agriculture_total,Продукция сельского хозяйства,113.3,99.1,stat_gov_kz_producer_price_index
+2015,agriculture_total,Продукция сельского хозяйства,102.7,106.9,stat_gov_kz_producer_price_index
+2016,agriculture_total,Продукция сельского хозяйства,107.5,107.8,stat_gov_kz_producer_price_index
+2017,agriculture_total,Продукция сельского хозяйства,102.6,104.7,stat_gov_kz_producer_price_index
+2018,agriculture_total,Продукция сельского хозяйства,107.8,102.8,stat_gov_kz_producer_price_index
+2019,agriculture_total,Продукция сельского хозяйства,115.9,114.6,stat_gov_kz_producer_price_index
+2020,agriculture_total,Продукция сельского хозяйства,115.3,113.9,stat_gov_kz_producer_price_index
+2021,agriculture_total,Продукция сельского хозяйства,117.3,115.6,stat_gov_kz_producer_price_index
+2022,agriculture_total,Продукция сельского хозяйства,109.0,117.2,stat_gov_kz_producer_price_index
+2023,agriculture_total,Продукция сельского хозяйства,95.3,98.9,stat_gov_kz_producer_price_index
+2024,agriculture_total,Продукция сельского хозяйства,97.7,98.1,stat_gov_kz_producer_price_index
+2025,agriculture_total,Продукция сельского хозяйства,110.1,99.9,stat_gov_kz_producer_price_index
+1992,crop_production_total,Продукция растениеводства,,1378.4,stat_gov_kz_producer_price_index
+1993,crop_production_total,Продукция растениеводства,863.9,707.9,stat_gov_kz_producer_price_index
+1994,crop_production_total,Продукция растениеводства,1913.8,1893.6,stat_gov_kz_producer_price_index
+1995,crop_production_total,Продукция растениеводства,218.9,209.7,stat_gov_kz_producer_price_index
+1996,crop_production_total,Продукция растениеводства,146.1,166.1,stat_gov_kz_producer_price_index
+1997,crop_production_total,Продукция растениеводства,93.3,89.7,stat_gov_kz_producer_price_index
+1998,crop_production_total,Продукция растениеводства,79.4,84.3,stat_gov_kz_producer_price_index
+1999,crop_production_total,Продукция растениеводства,136.4,109.4,stat_gov_kz_producer_price_index
+2000,crop_production_total,Продукция растениеводства,136.6,145.8,stat_gov_kz_producer_price_index
+2001,crop_production_total,Продукция растениеводства,105.6,122.8,stat_gov_kz_producer_price_index
+2002,crop_production_total,Продукция растениеводства,90.0,93.6,stat_gov_kz_producer_price_index
+2003,crop_production_total,Продукция растениеводства,149.1,105.3,stat_gov_kz_producer_price_index
+2004,crop_production_total,Продукция растениеводства,98.6,138.5,stat_gov_kz_producer_price_index
+2005,crop_production_total,Продукция растениеводства,92.8,94.0,stat_gov_kz_producer_price_index
+2006,crop_production_total,Продукция растениеводства,110.3,95.4,stat_gov_kz_producer_price_index
+2007,crop_production_total,Продукция растениеводства,154.2,126.6,stat_gov_kz_producer_price_index
+2008,crop_production_total,Продукция растениеводства,121.3,151.9,stat_gov_kz_producer_price_index
+2009,crop_production_total,Продукция растениеводства,77.0,100.5,stat_gov_kz_producer_price_index
+2010,crop_production_total,Продукция растениеводства,132.4,83.5,stat_gov_kz_producer_price_index
+2011,crop_production_total,Продукция растениеводства,86.2,135.6,stat_gov_kz_producer_price_index
+2012,crop_production_total,Продукция растениеводства,134.1,86.9,stat_gov_kz_producer_price_index
+2013,crop_production_total,Продукция растениеводства,86.6,123.5,stat_gov_kz_producer_price_index
+2014,crop_production_total,Продукция растениеводства,120.8,96.0,stat_gov_kz_producer_price_index
+2015,crop_production_total,Продукция растениеводства,103.0,112.1,stat_gov_kz_producer_price_index
+2016,crop_production_total,Продукция растениеводства,106.1,106.7,stat_gov_kz_producer_price_index
+2017,crop_production_total,Продукция растениеводства,103.3,103.6,stat_gov_kz_producer_price_index
+2018,crop_production_total,Продукция растениеводства,109.1,103.2,stat_gov_kz_producer_price_index
+2019,crop_production_total,Продукция растениеводства,119.1,117.9,stat_gov_kz_producer_price_index
+2020,crop_production_total,Продукция растениеводства,117.6,116.5,stat_gov_kz_producer_price_index
+2021,crop_production_total,Продукция растениеводства,120.1,116.9,stat_gov_kz_producer_price_index
+2022,crop_production_total,Продукция растениеводства,107.7,119.8,stat_gov_kz_producer_price_index
+2023,crop_production_total,Продукция растениеводства,92.3,96.1,stat_gov_kz_producer_price_index
+2024,crop_production_total,Продукция растениеводства,96.4,96.4,stat_gov_kz_producer_price_index
+2025,crop_production_total,Продукция растениеводства,109.5,101.1,stat_gov_kz_producer_price_index
+1992,grain_crops_group,культуры зерновые,,1443.0,stat_gov_kz_producer_price_index
+1993,grain_crops_group,культуры зерновые,840.0,622.1,stat_gov_kz_producer_price_index
+1994,grain_crops_group,культуры зерновые,1966.1,1844.3,stat_gov_kz_producer_price_index
+1995,grain_crops_group,культуры зерновые,225.2,220.0,stat_gov_kz_producer_price_index
+1996,grain_crops_group,культуры зерновые,152.5,173.2,stat_gov_kz_producer_price_index
+1997,grain_crops_group,культуры зерновые,91.2,110.7,stat_gov_kz_producer_price_index
+1998,grain_crops_group,культуры зерновые,78.1,83.0,stat_gov_kz_producer_price_index
+1999,grain_crops_group,культуры зерновые,140.9,110.3,stat_gov_kz_producer_price_index
+2000,grain_crops_group,культуры зерновые,139.4,153.6,stat_gov_kz_producer_price_index
+2001,grain_crops_group,культуры зерновые,106.2,124.2,stat_gov_kz_producer_price_index
+2002,grain_crops_group,культуры зерновые,87.9,92.4,stat_gov_kz_producer_price_index
+2003,grain_crops_group,культуры зерновые,153.0,104.3,stat_gov_kz_producer_price_index
+2004,grain_crops_group,культуры зерновые,99.8,143.1,stat_gov_kz_producer_price_index
+2005,grain_crops_group,культуры зерновые,91.3,93.9,stat_gov_kz_producer_price_index
+2006,grain_crops_group,культуры зерновые,109.9,93.6,stat_gov_kz_producer_price_index
+2007,grain_crops_group,культуры зерновые,159.3,128.7,stat_gov_kz_producer_price_index
+2008,grain_crops_group,культуры зерновые,122.7,156.3,stat_gov_kz_producer_price_index
+2009,grain_crops_group,культуры зерновые,74.7,100.4,stat_gov_kz_producer_price_index
+2010,grain_crops_group,культуры зерновые,131.2,80.4,stat_gov_kz_producer_price_index
+2011,grain_crops_group,культуры зерновые,84.8,135.9,stat_gov_kz_producer_price_index
+2012,grain_crops_group,культуры зерновые,140.0,86.9,stat_gov_kz_producer_price_index
+2013,grain_crops_group,культуры зерновые,83.6,125.9,stat_gov_kz_producer_price_index
+2014,grain_crops_group,культуры зерновые,122.2,94.0,stat_gov_kz_producer_price_index
+2015,grain_crops_group,культуры зерновые,103.4,113.3,stat_gov_kz_producer_price_index
+2016,grain_crops_group,культуры зерновые,106.9,107.6,stat_gov_kz_producer_price_index
+2017,grain_crops_group,культуры зерновые,99.4,102.2,stat_gov_kz_producer_price_index
+2018,grain_crops_group,культуры зерновые,114.1,102.0,stat_gov_kz_producer_price_index
+2019,grain_crops_group,культуры зерновые,130.6,127.9,stat_gov_kz_producer_price_index
+2020,grain_crops_group,культуры зерновые,118.8,122.6,stat_gov_kz_producer_price_index
+2021,grain_crops_group,культуры зерновые,115.5,114.8,stat_gov_kz_producer_price_index
+2022,grain_crops_group,культуры зерновые,110.1,120.3,stat_gov_kz_producer_price_index
+2023,grain_crops_group,культуры зерновые,90.6,93.6,stat_gov_kz_producer_price_index
+2024,grain_crops_group,культуры зерновые,92.0,96.8,stat_gov_kz_producer_price_index
+2025,grain_crops_group,культуры зерновые,107.9,95.5,stat_gov_kz_producer_price_index
+1992,oilseed_crops_group,семена масличные,,2112.6,stat_gov_kz_producer_price_index
+1993,oilseed_crops_group,семена масличные,661.1,751.6,stat_gov_kz_producer_price_index
+1994,oilseed_crops_group,семена масличные,2099.6,1829.0,stat_gov_kz_producer_price_index
+1995,oilseed_crops_group,семена масличные,296.4,265.6,stat_gov_kz_producer_price_index
+1996,oilseed_crops_group,семена масличные,85.9,160.8,stat_gov_kz_producer_price_index
+1997,oilseed_crops_group,семена масличные,110.6,96.1,stat_gov_kz_producer_price_index
+1998,oilseed_crops_group,семена масличные,104.3,117.1,stat_gov_kz_producer_price_index
+1999,oilseed_crops_group,семена масличные,122.0,114.0,stat_gov_kz_producer_price_index
+2000,oilseed_crops_group,семена масличные,102.8,89.8,stat_gov_kz_producer_price_index
+2001,oilseed_crops_group,семена масличные,109.1,113.7,stat_gov_kz_producer_price_index
+2002,oilseed_crops_group,семена масличные,121.9,126.3,stat_gov_kz_producer_price_index
+2003,oilseed_crops_group,семена масличные,98.7,100.6,stat_gov_kz_producer_price_index
+2004,oilseed_crops_group,семена масличные,102.2,99.2,stat_gov_kz_producer_price_index
+2005,oilseed_crops_group,семена масличные,104.4,103.8,stat_gov_kz_producer_price_index
+2006,oilseed_crops_group,семена масличные,99.6,104.9,stat_gov_kz_producer_price_index
+2007,oilseed_crops_group,семена масличные,118.6,101.9,stat_gov_kz_producer_price_index
+2008,oilseed_crops_group,семена масличные,121.4,133.0,stat_gov_kz_producer_price_index
+2009,oilseed_crops_group,семена масличные,89.1,100.4,stat_gov_kz_producer_price_index
+2010,oilseed_crops_group,семена масличные,127.1,97.0,stat_gov_kz_producer_price_index
+2011,oilseed_crops_group,семена масличные,113.2,137.4,stat_gov_kz_producer_price_index
+2012,oilseed_crops_group,семена масличные,94.9,93.5,stat_gov_kz_producer_price_index
+2013,oilseed_crops_group,семена масличные,100.4,108.2,stat_gov_kz_producer_price_index
+2014,oilseed_crops_group,семена масличные,98.4,93.7,stat_gov_kz_producer_price_index
+2015,oilseed_crops_group,семена масличные,119.0,103.8,stat_gov_kz_producer_price_index
+2016,oilseed_crops_group,семена масличные,115.4,123.9,stat_gov_kz_producer_price_index
+2017,oilseed_crops_group,семена масличные,98.4,107.8,stat_gov_kz_producer_price_index
+2018,oilseed_crops_group,семена масличные,105.4,97.4,stat_gov_kz_producer_price_index
+2019,oilseed_crops_group,семена масличные,113.5,114.9,stat_gov_kz_producer_price_index
+2020,oilseed_crops_group,семена масличные,124.5,113.8,stat_gov_kz_producer_price_index
+2021,oilseed_crops_group,семена масличные,128.8,129.5,stat_gov_kz_producer_price_index
+2022,oilseed_crops_group,семена масличные,100.7,119.5,stat_gov_kz_producer_price_index
+2023,oilseed_crops_group,семена масличные,88.9,90.9,stat_gov_kz_producer_price_index
+2024,oilseed_crops_group,семена масличные,104.1,92.5,stat_gov_kz_producer_price_index
+2025,oilseed_crops_group,семена масличные,116.1,114.4,stat_gov_kz_producer_price_index
+1992,potato,картофель,,0.4,stat_gov_kz_producer_price_index
+1993,potato,картофель,2394.3,1550.0,stat_gov_kz_producer_price_index
+1994,potato,картофель,2119.8,2847.5,stat_gov_kz_producer_price_index
+1995,potato,картофель,212.4,176.5,stat_gov_kz_producer_price_index
+1996,potato,картофель,128.3,140.5,stat_gov_kz_producer_price_index
+1997,potato,картофель,81.6,91.6,stat_gov_kz_producer_price_index
+1998,potato,картофель,79.8,87.3,stat_gov_kz_producer_price_index
+1999,potato,картофель,142.0,113.3,stat_gov_kz_producer_price_index
+2000,potato,картофель,118.6,118.9,stat_gov_kz_producer_price_index
+2001,potato,картофель,85.9,94.8,stat_gov_kz_producer_price_index
+2002,potato,картофель,106.0,92.0,stat_gov_kz_producer_price_index
+2003,potato,картофель,112.7,115.1,stat_gov_kz_producer_price_index
+2004,potato,картофель,97.0,100.5,stat_gov_kz_producer_price_index
+2005,potato,картофель,104.5,101.7,stat_gov_kz_producer_price_index
+2006,potato,картофель,130.6,118.5,stat_gov_kz_producer_price_index
+2007,potato,картофель,118.8,123.8,stat_gov_kz_producer_price_index
+2008,potato,картофель,122.8,120.5,stat_gov_kz_producer_price_index
+2009,potato,картофель,80.0,104.8,stat_gov_kz_producer_price_index
+2010,potato,картофель,127.0,91.6,stat_gov_kz_producer_price_index
+2011,potato,картофель,91.5,128.2,stat_gov_kz_producer_price_index
+2012,potato,картофель,98.6,77.6,stat_gov_kz_producer_price_index
+2013,potato,картофель,94.3,107.0,stat_gov_kz_producer_price_index
+2014,potato,картофель,122.5,104.5,stat_gov_kz_producer_price_index
+2015,potato,картофель,91.6,104.5,stat_gov_kz_producer_price_index
+2016,potato,картофель,97.7,92.7,stat_gov_kz_producer_price_index
+2017,potato,картофель,124.2,113.0,stat_gov_kz_producer_price_index
+2018,potato,картофель,85.9,104.9,stat_gov_kz_producer_price_index
+2019,potato,картофель,102.5,88.8,stat_gov_kz_producer_price_index
+2020,potato,картофель,122.5,115.0,stat_gov_kz_producer_price_index
+2021,potato,картофель,126.4,123.2,stat_gov_kz_producer_price_index
+2022,potato,картофель,102.4,117.4,stat_gov_kz_producer_price_index
+2023,potato,картофель,97.9,98.9,stat_gov_kz_producer_price_index
+2024,potato,картофель,112.9,100.2,stat_gov_kz_producer_price_index
+2025,potato,картофель,114.5,124.3,stat_gov_kz_producer_price_index
+1992,vegetables,овощи,,644.4,stat_gov_kz_producer_price_index
+1993,vegetables,овощи,396.0,2744.1,stat_gov_kz_producer_price_index
+1994,vegetables,овощи,1427.5,2195.4,stat_gov_kz_producer_price_index
+1995,vegetables,овощи,174.7,147.8,stat_gov_kz_producer_price_index
+1996,vegetables,овощи,94.3,118.6,stat_gov_kz_producer_price_index
+1997,vegetables,овощи,182.7,105.8,stat_gov_kz_producer_price_index
+1998,vegetables,овощи,101.8,95.7,stat_gov_kz_producer_price_index
+1999,vegetables,овощи,82.4,82.5,stat_gov_kz_producer_price_index
+2000,vegetables,овощи,123.8,117.9,stat_gov_kz_producer_price_index
+2001,vegetables,овощи,98.4,129.0,stat_gov_kz_producer_price_index
+2002,vegetables,овощи,98.4,94.3,stat_gov_kz_producer_price_index
+2003,vegetables,овощи,116.6,109.3,stat_gov_kz_producer_price_index
+2004,vegetables,овощи,100.9,105.1,stat_gov_kz_producer_price_index
+2005,vegetables,овощи,106.9,104.0,stat_gov_kz_producer_price_index
+2006,vegetables,овощи,109.1,109.6,stat_gov_kz_producer_price_index
+2007,vegetables,овощи,127.6,111.8,stat_gov_kz_producer_price_index
+2008,vegetables,овощи,113.8,130.5,stat_gov_kz_producer_price_index
+2009,vegetables,овощи,91.1,102.6,stat_gov_kz_producer_price_index
+2010,vegetables,овощи,126.0,97.5,stat_gov_kz_producer_price_index
+2011,vegetables,овощи,95.2,128.2,stat_gov_kz_producer_price_index
+2012,vegetables,овощи,105.3,83.8,stat_gov_kz_producer_price_index
+2013,vegetables,овощи,93.7,110.8,stat_gov_kz_producer_price_index
+2014,vegetables,овощи,121.7,101.6,stat_gov_kz_producer_price_index
+2015,vegetables,овощи,101.0,108.3,stat_gov_kz_producer_price_index
+2016,vegetables,овощи,94.1,100.0,stat_gov_kz_producer_price_index
+2017,vegetables,овощи,111.3,100.2,stat_gov_kz_producer_price_index
+2018,vegetables,овощи,96.2,103.3,stat_gov_kz_producer_price_index
+2019,vegetables,овощи,107.9,102.5,stat_gov_kz_producer_price_index
+2020,vegetables,овощи,109.6,108.3,stat_gov_kz_producer_price_index
+2021,vegetables,овощи,108.6,110.2,stat_gov_kz_producer_price_index
+2022,vegetables,овощи,108.5,108.1,stat_gov_kz_producer_price_index
+2023,vegetables,овощи,102.4,106.0,stat_gov_kz_producer_price_index
+2024,vegetables,овощи,100.7,100.8,stat_gov_kz_producer_price_index
+2025,vegetables,овощи,104.9,103.3,stat_gov_kz_producer_price_index

@@ -9,8 +9,20 @@
   wheat_price_usd_t, maize_price_usd_t, ...,  (мировые цены)
   t2m_celsius, total_precip_mm, ...,           (климат)
   ph, soc, clay, sand, ...,                    (почва)
+  price_idx_*_yoy_pct, price_idx_*_level, ...  (индекс цен производителей РК,
+                                                 см. 11_price_index.py)
   yield_lag1, yield_lag2, price_lag1, ...      (лаговые переменные)
   yield_roll3, price_roll3                     (скользящие средние)
+
+О блоке price_idx_*: это НАЦИОНАЛЬНЫЙ индекс цен производителей stat.gov.kz
+(11_price_index.py), доступный только по товарным ГРУППАМ "культуры зерновые"
+и "семена масличные" — не по отдельным культурам. Join идёт по year (как и
+мировые цены), поэтому значение одинаково для всех регионов в данном году —
+это ограничение источника, а не ошибка склейки. Колонки
+price_idx_matched_yoy_pct / price_idx_matched_level — это те же данные,
+но уже выбранные под конкретную культуру строки (grain_crops_group для
+пшеницы/ячменя/кукурузы/группы зерновых, oilseed_crops_group для
+подсолнечника/рапса/группы масличных) — см. CROP_TO_PRICE_INDEX_GROUP.
 """
 
 import pandas as pd
@@ -35,6 +47,19 @@ CROP_MAP_RU_EN = {
     "Кукуруза":                   "Maize",
     "Зерновые и бобовые (группа)": "Grains and legumes (group)",
     "Масличные (группа)":         "Oilseeds (group)",
+}
+
+# Какой индекс цен (11_price_index.py) относится к какой культуре.
+# Источник даёт только 2 группы растениеводства — сопоставление
+# "культура → группа", а не "культура → свой собственный индекс".
+CROP_TO_PRICE_INDEX_GROUP = {
+    "Wheat": "grain_crops_group",
+    "Barley": "grain_crops_group",
+    "Maize": "grain_crops_group",
+    "Grains and legumes (group)": "grain_crops_group",
+    "Sunflower seed": "oilseed_crops_group",
+    "Rapeseed": "oilseed_crops_group",
+    "Oilseeds (group)": "oilseed_crops_group",
 }
 
 
@@ -111,6 +136,34 @@ def load_climate() -> pd.DataFrame:
     return pd.DataFrame()
 
 
+def load_price_index() -> pd.DataFrame:
+    """
+    Загружает национальный индекс цен производителей (11_price_index.py):
+    среднегодовой % к предыдущему году (raw) + цепной относительный уровень
+    (chained, база=100 в год, заданный в 11_price_index.py). Оба файла —
+    по товарным группам, не по отдельным культурам (см. докстринг модуля).
+    """
+    raw_path = os.path.join(OUTPUT_DIR, "11_price_index_raw.csv")
+    chained_path = os.path.join(OUTPUT_DIR, "11_price_index_chained.csv")
+
+    if not os.path.exists(raw_path) or not os.path.exists(chained_path):
+        print("   Индекс цен производителей не найден — запустите 11_price_index.py")
+        return pd.DataFrame()
+
+    raw = pd.read_csv(raw_path)
+    pct_wide = raw.pivot(index="year", columns="category", values="index_avg_yoy_pct")
+    pct_wide = pct_wide.add_prefix("price_idx_").add_suffix("_yoy_pct").reset_index()
+
+    chained = pd.read_csv(chained_path).drop(columns=["source"])
+    level_cols = [c for c in chained.columns if c != "year"]
+    chained = chained.rename(columns={c: f"price_idx_{c}_level" for c in level_cols})
+
+    combined = pct_wide.merge(chained, on="year", how="outer")
+    print(f"  Индекс цен производителей (stat.gov.kz, 11_price_index.py): "
+          f"{len(combined)} лет, {len(combined.columns) - 1} колонок")
+    return combined
+
+
 def load_soil() -> pd.DataFrame:
     """Загружает почвенные данные SoilGrids."""
     path = os.path.join(OUTPUT_DIR, "04_soilgrids_wide.csv")
@@ -172,10 +225,11 @@ def add_rolling_features(df: pd.DataFrame, target_col: str, windows=(3, 5)) -> p
 def merge_all() -> pd.DataFrame:
     """Объединяет все источники."""
     print("\n  Загрузка датасетов...")
-    prod   = load_production()
-    prices = load_prices()
-    clim   = load_climate()
-    soil   = load_soil()
+    prod       = load_production()
+    prices     = load_prices()
+    price_idx  = load_price_index()
+    clim       = load_climate()
+    soil       = load_soil()
 
     if prod.empty:
         print("  Нет производственных данных. Прерывание.")
@@ -187,6 +241,23 @@ def merge_all() -> pd.DataFrame:
     if not prices.empty:
         master = master.merge(prices, on="year", how="left")
         print(f"  После join цен: {len(master)} строк")
+
+    # Join индекса цен производителей по году (национальный, по группам культур)
+    if not price_idx.empty:
+        master = master.merge(price_idx, on="year", how="left")
+        print(f"  После join индекса цен: {len(master)} строк")
+
+        # Подбираем индекс под конкретную культуру строки (см. CROP_TO_PRICE_INDEX_GROUP)
+        if "crop_en" in master.columns:
+            master["price_idx_group_match"] = master["crop_en"].map(CROP_TO_PRICE_INDEX_GROUP)
+            for suffix in ("yoy_pct", "level"):
+                def pick(row, suffix=suffix):
+                    grp = row["price_idx_group_match"]
+                    if pd.isna(grp):
+                        return np.nan
+                    col = f"price_idx_{grp}_{suffix}"
+                    return row.get(col, np.nan)
+                master[f"price_idx_matched_{suffix}"] = master.apply(pick, axis=1)
 
     # Join климата по году
     if not clim.empty:
